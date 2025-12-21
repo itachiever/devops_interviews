@@ -61,3 +61,48 @@
 30. If we deploy you into our production environment tomorrow, what areas would you first look at to understand system stability and security?
 
 ---
+---
+
+## SECOND TECHNICAL ROUND – QUESTIONS (20)
+
+1. Suppose you are asked to automate the cleanup of unused Docker images and stopped containers on a production server. How would you approach this, and can you write a simple script for it?
+
+2. We want to create a Jenkins pipeline that builds a Docker image, scans it for vulnerabilities, pushes it to a registry, and deploys it to Kubernetes. Can you explain the pipeline flow and write a basic Jenkinsfile structure?
+
+3. Imagine that a Terraform apply accidentally modified a critical production resource. How would you detect, rollback, and prevent this from happening again?
+
+4. Can you write a simple Terraform example to provision an EC2 instance with a security group allowing only HTTP and HTTPS traffic?
+
+5. How would you automate the deployment of the same application to DEV, UAT, and PROD using a single CI/CD pipeline while ensuring proper approvals?
+
+6. Suppose Kubernetes pods are consuming more memory over time and eventually getting OOMKilled. How would you investigate and fix this?
+
+7. Can you write a basic Kubernetes Deployment YAML with resource requests, limits, and health probes configured?
+
+8. You are asked to restrict communication between microservices so that only specific services can talk to each other. How would you implement this in Kubernetes?
+
+9. How would you automate the rotation of secrets used by applications without causing downtime?
+
+10. Suppose Jenkins is deployed on-prem and Kubernetes is running in the cloud. How would you securely automate deployments between them?
+
+11. Can you write a simple Bash or Python script to monitor disk usage and send an alert when it crosses a threshold?
+
+12. How do you design CI/CD pipelines in such a way that security scanning does not slow down developer productivity?
+
+13. Suppose your Kubernetes cluster certificate is about to expire. How would you detect this and handle renewal safely?
+
+14. Can you explain how you would implement blue-green or canary deployments in Kubernetes using CI/CD pipelines?
+
+15. Write a simple GitLab CI or Jenkins pipeline stage that runs a SAST scan and fails the build if high-severity issues are found.
+
+16. How would you troubleshoot a situation where Terraform state is corrupted or out of sync with actual infrastructure?
+
+17. Suppose an application requires access to AWS S3 from inside a Kubernetes pod. How would you configure this securely?
+
+18. How would you automate infrastructure provisioning for a new environment from scratch using Terraform and Ansible?
+
+19. Can you write or explain a script that copies logs from multiple servers, compresses them, and stores them in a central location?
+
+20. If a deployment works fine in DEV but consistently fails in PROD, how would you approach debugging this difference?
+
+---
