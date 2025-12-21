@@ -1,12 +1,12 @@
 #1st Technical Round Questions:
 
-Can you walk me through your current role and explain what exactly you are responsible for on a day-to-day basis?
+. Can you walk me through your current role and explain what exactly you are responsible for on a day-to-day basis?
 
-Tell me about a production-grade AWS or Azure architecture you have worked on. How does the traffic flow from the user to the application?
+* Tell me about a production-grade AWS or Azure architecture you have worked on. How does the traffic flow from the user to the application?
 
-In your experience, where do you usually place application workloads in AWS — public or private subnets — and why?
+1. In your experience, where do you usually place application workloads in AWS — public or private subnets — and why?
 
-Suppose your application is deployed in a private subnet and suddenly it is not able to reach the internet. How would you start troubleshooting this?
+2. Suppose your application is deployed in a private subnet and suddenly it is not able to reach the internet. How would you start troubleshooting this?
 
 Can you explain how Security Groups and NACLs work together in a real production environment?
 
