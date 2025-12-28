@@ -1,9 +1,9 @@
 # CHALLENGES:
-Kubernetes Config Context
-Python S3 Get Contents
-Longest Increasing Sequence
-Node.js Detailed Log Analysis
-Docker Custom Redis
+* Kubernetes Config Context
+* Python S3 Get Contents
+* Longest Increasing Sequence
+* Node.js Detailed Log Analysis
+* Docker Custom Redis
 
 Challenge1: Docker Custom Redis
 
