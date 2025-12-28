@@ -92,20 +92,24 @@ Imagine a developer reports that their newly deployed microservice, running in a
 Walk me through, step-by-step, how you would troubleshoot this network connectivity issue from your command line. What are the most likely culprits in the order you would investigate them?
 
 * Question 2 :
+
 Tell me about the most memorable or challenging production outage you were directly involved in resolving. I'm not interested in the simple ones. I want to hear about one where the cause was not immediately obvious and the standard monitoring dashboards weren't helping.
 
 What was the user-facing symptom? What was your initial hypothesis and how did you prove or disprove it? What was the actual root cause, and what long-term changes did you implement to prevent it from ever happening again?
 
 * Question 3:
+
 A critical Linux server running one of our applications is reported to be 'slow. You ssh in and run top. You see that the CPU usage is very low (under 20%) and there is plenty of free memory. However, the load average is unusually high.
 
 What does this combination of symptoms (low CPU, high load average, free RAM) suggest to you? What specific command-line tools would you use next to diagnose the bottleneck, and what are you looking for?
 
 * Question 4:
+
 We have a critical data pipeline: microservices write events to a Kafka topic, and a consumer service reads from that topic to write data into our ClickHouse database. A data analyst reports that the dashboards are showing a significant drop in event volume for the last hour.
 
 The microservice producers are reporting no errors, and the Kafka brokers seem healthy. How do you debug this potential data loss or delay? What is the single most important metric you would check first, and what tools would you use?
 
 
 * Question 5:
+
 What are your short-term professional goals, and how do you plan to achieve them?
