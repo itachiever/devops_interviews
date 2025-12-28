@@ -86,6 +86,7 @@ max_connect_time ms
 # Questions:
 
 * Question 1:
+
 Imagine a developer reports that their newly deployed microservice, running in a Kubernetes pod, is healthy (the readiness and liveness probes are passing) and the logs look fine, but it cannot connect to the PostgreSQL database running in a different pod within the same namespace.
 
 Walk me through, step-by-step, how you would troubleshoot this network connectivity issue from your command line. What are the most likely culprits in the order you would investigate them?
