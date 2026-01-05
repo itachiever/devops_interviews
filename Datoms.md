@@ -1,47 +1,50 @@
-First Technical Round — 23 Interview Questions
 
-Tell me about a recent CI/CD pipeline you built end-to-end. Walk me through stages, tools, failure handling, and how you enforced security gates.
+# First Technical Round — 23 Interview Questions
 
-Explain how you would design a multi-environment (DEV → UAT → PROD) Jenkins pipeline that supports approvals and safe rollouts. What branching strategy and artifacts promotion approach would you use?
+1. Tell me about a recent CI/CD pipeline you built end-to-end. Walk me through stages, tools, failure handling, and how you enforced security gates.
 
-You wrote that you integrated SAST/DAST/SCA into pipelines. Pick one of those (e.g., Snyk or Fortify) and explain exactly how you integrated it into CI, what scan results you blocked on, and how you handled false positives.
+2. Explain how you would design a multi-environment (DEV → UAT → PROD) Jenkins pipeline that supports approvals and safe rollouts. What branching strategy and artifacts promotion approach would you use?
 
-Describe how you provision infrastructure with Terraform. How do you organize modules, manage state, and handle environment isolation and secrets?
+3. You wrote that you integrated SAST/DAST/SCA into pipelines. Pick one of those (e.g., Snyk or Fortify) and explain exactly how you integrated it into CI, what scan results you blocked on, and how you handled false positives.
 
-A Kubernetes deployment is crashing in PROD with CrashLoopBackOff. Describe your debugging steps (kubectl commands, log checks, common root causes, remediation).
+4. Describe how you provision infrastructure with Terraform. How do you organize modules, manage state, and handle environment isolation and secrets?
 
-How do you design Kubernetes clusters for high availability and security in a cloud environment (nodes, control plane, network policies, private clusters vs public)?
+5. A Kubernetes deployment is crashing in PROD with `CrashLoopBackOff`. Describe your debugging steps (kubectl commands, log checks, common root causes, remediation).
 
-Explain how you would securely store and inject secrets into a CI/CD pipeline and into Kubernetes workloads. Compare at least two options (e.g., Vault, Azure Key Vault, Kubernetes Secrets) and trade-offs.
+6. How do you design Kubernetes clusters for high availability and security in a cloud environment (nodes, control plane, network policies, private clusters vs public)?
 
-Describe a time you diagnosed and fixed a production outage. What monitoring/alerts led you to the problem, how did you triage, what was the root cause, and what postmortem actions did you take?
+7. Explain how you would securely store and inject secrets into a CI/CD pipeline and into Kubernetes workloads. Compare at least two options (e.g., Vault, Azure Key Vault, Kubernetes Secrets) and trade-offs.
 
-For an IoT platform with high-throughput ingestion, which data stores and messaging systems would you consider (Kafka, Redis, ClickHouse), and how would you scale and make them resilient?
+8. Describe a time you diagnosed and fixed a production outage. What monitoring/alerts led you to the problem, how did you triage, what was the root cause, and what postmortem actions did you take?
 
-Walk me through how you would set up centralized logging and monitoring for microservices using Prometheus, Grafana, and the ELK stack. What metrics and alerts are critical?
+9. For an IoT platform with high-throughput ingestion, which data stores and messaging systems would you consider (Kafka, Redis, ClickHouse), and how would you scale and make them resilient?
 
-How do you ensure container image security and provenance (build process, image scanning, immutable tags, registry policies)? Explain a typical pipeline flow you’d implement.
+10. Walk me through how you would set up centralized logging and monitoring for microservices using Prometheus, Grafana, and the ELK stack. What metrics and alerts are critical?
 
-Explain how you would implement network segmentation for a secure CI/CD environment with a DMZ exposing limited Jenkins endpoints. What components, rules, and access controls are needed?
+11. How do you ensure container image security and provenance (build process, image scanning, immutable tags, registry policies)? Explain a typical pipeline flow you’d implement.
 
-Give an example of an automation you wrote in Python or Bash that saved time or reduced incidents. Show the logic, error handling, and idempotency considerations.
+12. Explain how you would implement network segmentation for a secure CI/CD environment with a DMZ exposing limited Jenkins endpoints. What components, rules, and access controls are needed?
 
-How do you manage cloud costs (FinOps) in AWS/Azure/GCP for a microservices platform? Provide specific levers you’d use to reduce waste.
+13. Give an example of an automation you wrote in Python or Bash that saved time or reduced incidents. Show the logic, error handling, and idempotency considerations.
 
-You mentioned VPN connectivity between on-prem and cloud. How do you set up a secure VPN (or ExpressRoute/VPN Gateway), and what network considerations (routing, BGP, CIDR overlap) matter?
+14. How do you manage cloud costs (FinOps) in AWS/Azure/GCP for a microservices platform? Provide specific levers you’d use to reduce waste.
 
-Explain how RBAC works in Kubernetes and how you would design RBAC for developers, SREs, and CI systems to follow the principle of least privilege.
+15. You mentioned VPN connectivity between on-prem and cloud. How do you set up a secure VPN (or ExpressRoute/VPN Gateway), and what network considerations (routing, BGP, CIDR overlap) matter?
 
-A developer reports intermittent high latency for a specific service. What steps and tools do you use to pinpoint whether it’s application, network, or infra related?
+16. Explain how RBAC works in Kubernetes and how you would design RBAC for developers, SREs, and CI systems to follow the principle of least privilege.
 
-Describe how you would implement policy-as-code and shift-left security in a pipeline. Which tools would you pick and how would you enforce policies pre-merge?
+17. A developer reports intermittent high latency for a specific service. What steps and tools do you use to pinpoint whether it’s application, network, or infra related?
 
-How do you perform blue/green or canary deployments in Kubernetes? Explain traffic shifting, rollout strategies, and how you handle database schema changes safely.
+18. Describe how you would implement policy-as-code and shift-left security in a pipeline. Which tools would you pick and how would you enforce policies pre-merge?
 
-Explain a complex Terraform gotcha or a state-management issue you encountered and how you solved it. What would you do to prevent similar problems?
+19. How do you perform blue/green or canary deployments in Kubernetes? Explain traffic shifting, rollout strategies, and how you handle database schema changes safely.
 
-What’s your approach to secrets scanning (e.g., GitLeaks) and preventing secrets from entering git history? How do you remediate when secrets are leaked?
+20. Explain a complex Terraform gotcha or a state-management issue you encountered and how you solved it. What would you do to prevent similar problems?
 
-Tell me about a time you had to collaborate with application developers and product owners to deliver a production feature. How did you balance speed, reliability, and security?
+21. What’s your approach to secrets scanning (e.g., GitLeaks) and preventing secrets from entering git history? How do you remediate when secrets are leaked?
 
-If hired, what immediate improvements (first 30–60–90 days) would you propose for a DevOps/DevSecOps platform supporting IoT workloads?
+22. Tell me about a time you had to collaborate with application developers and product owners to deliver a production feature. How did you balance speed, reliability, and security?
+
+23. If hired, what immediate improvements (first 30–60–90 days) would you propose for a DevOps/DevSecOps platform supporting IoT workloads?
+
+
