@@ -1,6 +1,6 @@
-# 1st Round Interview Questions:
 # Role: DevOps
 # Experience: 3.8 YOE
+# 1st Round Interview Questions:
 1. Tell me your introduction & day-to-day activities?
 2. Which cloud are you using & which AWS services are you using?
 3. Tell me what is the difference between private & public subnets.
