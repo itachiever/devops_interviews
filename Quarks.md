@@ -22,3 +22,22 @@
 19. What is ADD in a Dockerfile? What is the difference between CMD and ENTRYPOINT?
 20. Tell the command in Ubuntu: if a process is running, how do you kill that process?
 Do you have any questions?
+
+#------------------------
+# 2nd Round Interview Questions:
+Questions:
+	1. Give me a short introduction, the work you have done, projects, company, and tech stack that you have worked on?
+	2. Have you worked on Kubernetes?
+	3. Explain the Kubernetes architecture and the components and its functionality clearly.
+	4. What is the use of the kube-scheduler?
+	5. What is node selector and node affinity?
+	6. What is the difference between ALB and NLB?
+	7. What is the difference between CMD and ENTRYPOINT?
+	8. Have you worked on Terraform?
+	9. What is a module in Terraform?
+	10. What is a service and service type in Kubernetes?
+	11. What is Ingress?
+	12. Let’s suppose there is one application that is throwing a 503 error. How will you debug it?
+	13. Suppose there is one application that is giving an OOM issue. How will you debug this?
+	14. Let’s suppose you have deployed a new application and the pod is not getting any node. That means the pod status will be in Pending status. So how will you debug that issue?
+	15. This role is for the infra core team that requires Kubernetes, CI/CD, and security.
