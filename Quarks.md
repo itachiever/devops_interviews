@@ -23,7 +23,6 @@
 20. Tell the command in Ubuntu: if a process is running, how do you kill that process?
 Do you have any questions?
 
-# ------------------------
 # 2nd Round Interview Questions:
 1. Give me a short introduction, the work you have done, projects, company, and tech stack that you have worked on?
 2. Have you worked on Kubernetes?
@@ -39,4 +38,4 @@ Do you have any questions?
 12. Let’s suppose there is one application that is throwing a 503 error. How will you debug it?
 13. Suppose there is one application that is giving an OOM issue. How will you debug this?
 14. Let’s suppose you have deployed a new application and the pod is not getting any node. That means the pod status will be in Pending status. So how will you debug that issue?
-15. This role is for the infra core team that requires Kubernetes, CI/CD, and security.
+This role is for the infra core team that requires Kubernetes, CI/CD, and security.
