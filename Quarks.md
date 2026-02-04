@@ -23,6 +23,7 @@
 20. Tell the command in Ubuntu: if a process is running, how do you kill that process?
 Do you have any questions?
 
+
 # 2nd Round Interview Questions:
 1. Give me a short introduction, the work you have done, projects, company, and tech stack that you have worked on?
 2. Have you worked on Kubernetes?
