@@ -21,7 +21,7 @@
 18. What is PVC?
 19. What is ADD in a Dockerfile? What is the difference between CMD and ENTRYPOINT?
 20. Tell the command in Ubuntu: if a process is running, how do you kill that process?
- Do you have any questions?
+21. Do you have any questions?
 
 
 # 2nd Round Interview Questions:
