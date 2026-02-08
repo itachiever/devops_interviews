@@ -57,3 +57,269 @@
 
 ---
 
+## Answers
+
+---
+
+## 1️⃣ Job Responsibilities, Collaboration & Day-to-Day Work
+
+**Answer (Interview-ready):**
+
+My primary responsibility as a DevOps/DevSecOps engineer is to **build, maintain, and improve CI/CD pipelines**, manage **cloud and Kubernetes infrastructure**, and ensure **secure, reliable, and scalable deployments**.
+
+On a day-to-day basis:
+
+* I work closely with **developers** to understand application changes, build issues, and deployment needs.
+* I collaborate with **QA/UAT teams** to support environment stability and release readiness.
+* I coordinate with **security teams** for vulnerability scanning, compliance checks, and incident handling.
+* I support **production systems**, monitor alerts, and handle incidents or performance issues.
+
+Typical daily activities include:
+
+* Monitoring Jenkins pipelines, Kubernetes clusters, and cloud resources
+* Supporting deployments or hotfixes
+* Debugging build or deployment failures
+* Writing or improving automation using **Jenkins, Terraform, Ansible, or Python**
+* Participating in **standups, release calls, and post-incident reviews**
+
+The projects I support are mostly **microservices-based applications** running on Kubernetes with cloud infrastructure provisioned using Terraform.
+
+---
+
+## 2️⃣ CI/CD with Jenkins for DEV, UAT, PROD (Pipeline Design)
+
+**Answer:**
+
+Yes, we use **Jenkins for CI/CD** with Kubernetes environments like **DEV, UAT, and Production**.
+
+We generally follow a **single Jenkins pipeline with environment-specific stages**, not completely separate jobs for each environment.
+
+How it works:
+
+* **CI stages** (build, unit tests, security scans, Docker image build) are triggered automatically on **code commit**.
+* The pipeline builds **one immutable Docker image** and pushes it to Nexus/Artifactory.
+* **CD stages** deploy the same image to:
+
+  * DEV automatically
+  * UAT after approval
+  * Production after final approval
+
+Environment-specific behavior is handled using:
+
+* Different **values files (Helm)** or **Kubernetes manifests**
+* Environment variables
+* Separate namespaces or clusters
+
+This approach ensures **consistency across environments** and avoids “works in dev but not in prod” issues.
+
+---
+
+## 3️⃣ Kubernetes Environment – Services, Pods & Applications
+
+**Answer:**
+
+In a typical Kubernetes setup:
+
+* We usually have **20–40 microservices** depending on the project
+* Each service may run **2–5 pods per environment**
+* So overall, we might see **100+ pods per environment**
+
+Applications are usually:
+
+* Independent microservices
+* Exposed internally via ClusterIP
+* Exposed externally via Ingress or LoadBalancer
+
+We manage and monitor this using:
+
+* `kubectl`
+* Prometheus & Grafana
+* Centralized logging (ELK or similar)
+
+The exact numbers vary by environment:
+
+* DEV has fewer replicas
+* PROD has higher replicas for high availability
+
+---
+
+## 4️⃣ Deployment Strategy – Single or Multiple Pipelines
+
+**Answer:**
+
+We mostly use a **single pipeline**, but it is **branch-aware and environment-aware**.
+
+Pipeline behavior changes based on:
+
+* Git branch
+* Environment
+* Approval gates
+
+Example:
+
+* Feature branches → CI only
+* Develop branch → CI + deploy to DEV
+* Release branch → deploy to UAT
+* Main/Master branch → deploy to Production
+
+This keeps the pipeline **centralized, manageable, and auditable**, instead of maintaining multiple Jenkins jobs.
+
+---
+
+## 5️⃣ Deploying Partial Services (6 out of 10 to Production)
+
+**Answer:**
+
+In microservices architecture, we **deploy services independently**.
+
+If only **6 out of 10 services** need to go to production:
+
+* Only those services are built and deployed
+* Other services remain untouched
+
+This is handled by:
+
+* Separate repositories per service **OR**
+* Mono-repo with service-level pipeline triggers
+
+Each service has:
+
+* Its own Docker image
+* Its own Helm chart or Kubernetes manifest
+* Its own deployment pipeline
+
+So production deployment is **service-specific**, not environment-wide.
+
+---
+
+## 6️⃣ Requirements Gathering & Post-Deployment Validation
+
+**Answer:**
+
+Requirements come from:
+
+* Jira tickets
+* Release notes
+* Sprint planning discussions
+* Direct communication with developers or product owners
+
+Once Jenkins finishes:
+
+* We verify deployment using:
+
+  * `kubectl rollout status`
+  * Health check endpoints
+  * Application logs
+* We monitor:
+
+  * Error rates
+  * Pod restarts
+  * Latency and resource usage
+
+For production:
+
+* We rely on **monitoring dashboards**
+* Alerts from Prometheus or cloud monitoring
+* Sometimes smoke tests or sanity checks
+
+If everything is green, the deployment is considered successful.
+
+---
+
+## 7️⃣ Git Branching for DEV, UAT & PROD
+
+**Answer:**
+
+Yes, we use **separate Git branches**.
+
+Typical setup:
+
+* `develop` → DEV
+* `release` or `uat` → UAT
+* `main/master` → Production
+
+Why separate branches:
+
+* Code stability increases as we move forward
+* Production code remains protected
+* Easier rollback and hotfix management
+* Controlled release process
+
+This avoids unstable code reaching production accidentally.
+
+---
+
+## 8️⃣ Production Bugfix When Rollback Is Not Possible
+
+**Answer:**
+
+If rollback is not possible due to:
+
+* Database changes
+* Backend API changes
+
+We follow a **hotfix strategy**:
+
+* Create a **hotfix branch from master**
+* Apply minimal, targeted fix
+* Test it quickly in a controlled environment
+* Deploy directly to production
+
+After production fix:
+
+* The same fix is merged back into **develop**
+* This ensures future releases include the fix
+
+This is a very common real-world production scenario.
+
+---
+
+## 9️⃣ Hotfix Branch – Merge Strategy
+
+**Answer:**
+
+Yes, after fixing the issue:
+
+* The hotfix branch is merged into **master**
+* And also merged into **develop**
+
+Why:
+
+* Master gets the immediate fix
+* Develop stays in sync
+* Avoids reintroducing the same bug in future releases
+
+Skipping merge to develop can cause regression later.
+
+---
+
+## 🔟 Release Versioning Strategy
+
+**Answer:**
+
+We follow **semantic versioning**:
+
+* `MAJOR.MINOR.PATCH`
+
+Examples:
+
+* `1.2.0` → new feature release
+* `1.2.1` → bug fix
+* `2.0.0` → breaking change
+
+Versioning is applied to:
+
+* Git tags
+* Docker images
+* Helm chart versions
+
+This helps with:
+
+* Traceability
+* Rollbacks
+* Audit and compliance
+
+---
+
+
+
