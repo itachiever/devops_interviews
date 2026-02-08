@@ -63,7 +63,7 @@
 
 ## 1️⃣ Job Responsibilities, Collaboration & Day-to-Day Work
 
-**Answer (Interview-ready):**
+**Answer:**
 
 My primary responsibility as a DevOps/DevSecOps engineer is to **build, maintain, and improve CI/CD pipelines**, manage **cloud and Kubernetes infrastructure**, and ensure **secure, reliable, and scalable deployments**.
 
