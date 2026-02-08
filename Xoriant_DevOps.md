@@ -773,5 +773,59 @@ When an event occurs:
 ---
 
 
+---
+
+A lambda function is a small, "anonymous" function that has no name and is defined in a single line. It is used for quick, throwaway tasks.
+Syntax: lambda arguments: expression.
+Simple Example:
+
+```python
+# A regular function
+def square(x):
+    return x * x
+
+# The same thing as a lambda
+square_lambda = lambda x: x * x
+
+print(square_lambda(5))  # Output: 25
+```
+
+Use code with caution.
+
+Explanation: You use the keyword lambda instead of def. There is no return statement because it automatically returns the result of the expression.
+
+---
+
+### 2. What is a Lambda Handler?
+
+A Lambda Handler is a specific function used in AWS Lambda (a serverless cloud service). It serves as the entry point for your code—similar to a main() function.
+Syntax: `def lambda_handler(event, context):`
+Simple Example:
+
+```python
+import json
+
+def lambda_handler(event, context):
+    # 'event' contains data passed to the function (like a username)
+    name = event.get('firstName', 'Guest')
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps(f"Hello, {name}!")
+    }
+```
+
+Use code with caution.
+
+Explanation:
+
+* **event:** A Python dictionary containing data from the trigger (e.g., an API request or file upload).
+* **context:** An object providing info about the runtime environment (e.g., time remaining before timeout).
+* **The Handler:** AWS looks for this specific function name to start running your code when a trigger occurs.
+
+---
+
+
+
 
 
