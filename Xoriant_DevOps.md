@@ -321,5 +321,457 @@ This helps with:
 
 ---
 
+## 1️⃣1️⃣ Single Docker Image vs Separate Images per Environment
+
+**Answer:**
+
+We follow the principle of **“build once, deploy everywhere.”**
+So we **create a single Docker image** and deploy the same image to **DEV, UAT, and Production**.
+
+Why:
+
+* Ensures **consistency across environments**
+* Avoids environment-specific bugs
+* Improves traceability and rollback
+* Aligns with DevOps best practices
+
+The image remains the same; only **configuration changes per environment**, like:
+
+* Environment variables
+* ConfigMaps
+* Secrets
+* Helm values
+
+---
+
+## 1️⃣2️⃣ Can One Image Be Used Across All Environments?
+
+**Answer:**
+
+Yes, **one Docker image should be used for all environments**.
+
+We never bake environment-specific values into the image.
+Instead, we externalize configuration using:
+
+* Kubernetes ConfigMaps
+* Secrets
+* Helm values files
+* Runtime environment variables
+
+This ensures:
+
+* No rebuilds per environment
+* Faster deployments
+* Better security and auditability
+
+---
+
+## 1️⃣3️⃣ Image Lifecycle Management in Nexus / Artifactory
+
+**Answer:**
+
+We manage image lifecycle using:
+
+* **Retention policies**
+* **Tagging strategies**
+* **Automated cleanup jobs**
+
+Typical approach:
+
+* Keep:
+
+  * Latest N images (for example, last 20)
+  * All production-tagged images
+* Purge:
+
+  * Old snapshots
+  * Untagged images
+  * Failed or unused builds
+
+This cleanup is usually automated using:
+
+* Nexus lifecycle policies
+* Scheduled cleanup scripts
+* Jenkins cleanup jobs
+
+---
+
+## 1️⃣4️⃣ Handling Large Number of Images in Nexus
+
+**Answer:**
+
+At month-end, when many images accumulate:
+
+* We rely on **image tagging**
+
+  * `latest`
+  * semantic versions
+  * environment-specific tags (prod-release)
+* Production images are **never auto-deleted**
+* DEV and UAT images follow aggressive cleanup
+
+Retention differs by environment:
+
+* DEV → short retention
+* UAT → medium retention
+* PROD → long-term retention
+
+This balances **storage cost and traceability**.
+
+---
+
+## 1️⃣5️⃣ Dockerfile for Node.js – Best Practices
+
+**Answer:**
+
+We use **multi-stage Docker builds** for Node.js.
+
+Typical choices:
+
+* Base image: `node:18-alpine`
+* Reason:
+
+  * Smaller size
+  * Faster build
+  * Security-friendly
+
+Steps:
+
+* First stage:
+
+  * Install dependencies
+  * Build application
+* Second stage:
+
+  * Copy only build artifacts
+  * Exclude dev dependencies
+
+Final image size is usually **under 150–200 MB**, sometimes even smaller.
+
+---
+
+## 1️⃣6️⃣ Managing `node_modules`
+
+**Answer:**
+
+We **do not copy `node_modules` from local machines**.
+
+Best practice:
+
+* Use `package-lock.json`
+* Run `npm ci` during build
+* Cache dependencies at Docker layer level
+
+This ensures:
+
+* Clean, reproducible builds
+* No local dependency mismatch
+* Faster rebuilds due to Docker layer caching
+
+---
+
+## 1️⃣7️⃣ Handling Large Docker Image Size
+
+**Answer:**
+
+If the image becomes large, we:
+
+* Switch to `alpine` base images
+* Use multi-stage builds
+* Remove unnecessary tools and files
+* Exclude dev dependencies
+* Use `.dockerignore`
+
+We also scan images using:
+
+* Trivy
+* Snyk
+
+This improves **performance, security, and cost efficiency**.
+
+---
+
+## 1️⃣8️⃣ Terraform – What Do You Use It For?
+
+**Answer:**
+
+We use Terraform for:
+
+* Provisioning cloud infrastructure
+* Managing Kubernetes clusters
+* Creating networking components
+* IAM roles and policies
+* Load balancers, databases, EC2 instances
+
+Terraform allows us to manage infrastructure as **code**, ensuring:
+
+* Consistency
+* Version control
+* Easy recreation
+
+---
+
+## 1️⃣9️⃣ Real Terraform Use Case
+
+**Answer:**
+
+Recently, I used Terraform to:
+
+* Create EKS cluster
+* Configure node groups
+* Setup VPC, subnets, route tables
+* Create IAM roles
+* Integrate load balancers
+
+We used:
+
+* Remote backend (S3 + DynamoDB)
+* Variables for environment-specific values
+* Modules for reusability
+
+---
+
+## 2️⃣0️⃣ Terraform Workspaces
+
+**Answer:**
+
+Yes, I have used Terraform workspaces.
+
+Workspaces help manage:
+
+* DEV
+* UAT
+* PROD
+
+Using the same codebase with:
+
+* Different state files
+* Different variable values
+
+This avoids code duplication and keeps infrastructure consistent across environments.
+
+---
+
+## 2️⃣1️⃣ Differentiating Environments in Terraform
+
+**Answer:**
+
+We differentiate environments in Terraform using a combination of:
+
+* **Variables**
+* **Workspaces**
+* **Separate state files**
+* **Environment-specific tfvars**
+
+Typical setup:
+
+* `variables.tf` → common variables
+* `dev.tfvars`, `uat.tfvars`, `prod.tfvars` → environment values
+* Remote backend with separate state per environment
+
+Example differences:
+
+* Instance size
+* Auto-scaling limits
+* Number of replicas
+* Network CIDR ranges
+
+This ensures the **same Terraform code** works across environments while keeping configurations isolated.
+
+---
+
+## 2️⃣2️⃣ Multi-Environment Management Using Terraform
+
+**Answer:**
+
+Multi-environment management is done using:
+
+* A **single Terraform codebase**
+* Environment-specific inputs
+* Separate backends or workspaces
+
+Flow:
+
+* Same modules reused
+* Different variable values per environment
+* Separate state to avoid conflicts
+
+This avoids:
+
+* Code duplication
+* Configuration drift
+* Manual infrastructure changes
+
+Everything is controlled through **Git + Terraform plan/apply**.
+
+---
+
+## 2️⃣3️⃣ Writing Reusable Terraform Modules (Example: EC2)
+
+**Answer:**
+
+Yes, I am responsible for writing Terraform modules.
+
+Best practices I follow:
+
+* One resource type per module
+* Clear input/output variables
+* No hardcoded values
+* Use defaults where possible
+* Proper tagging standards
+* Versioned modules
+
+EC2 module structure:
+
+* `main.tf` → EC2 resource
+* `variables.tf` → configurable inputs
+* `outputs.tf` → instance ID, IP, etc.
+
+This allows the same module to be reused across:
+
+* DEV
+* UAT
+* PROD
+* Multiple projects
+
+---
+
+## 2️⃣4️⃣ Terraform Module Standardization
+
+**Answer:**
+
+We standardize modules by:
+
+* Enforcing naming conventions
+* Mandatory tagging (env, owner, cost-center)
+* Version control for modules
+* Documentation for usage
+* Code reviews before changes
+
+This helps:
+
+* Reduce errors
+* Improve reuse
+* Maintain consistency across teams
+
+---
+
+## 2️⃣5️⃣ Python – Exception Handling
+
+**Answer:**
+
+In Python, exceptions are used to handle **unexpected runtime errors** gracefully.
+
+Common examples:
+
+* File not found
+* Network failure
+* Invalid input
+
+We use:
+
+* `try`, `except`, `finally`
+* Custom exceptions when needed
+
+Exceptions should be used for **exceptional cases**, not normal logic flow.
+
+---
+
+## 2️⃣6️⃣ Python Exception – Simple Example
+
+**Answer:**
+
+Example:
+
+```python
+try:
+    file = open("data.txt", "r")
+    content = file.read()
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("Execution completed")
+```
+
+Where to use exceptions:
+
+* External dependencies
+* I/O operations
+* API calls
+
+Where NOT to use exceptions:
+
+* Normal conditional checks
+* Business logic decisions
+
+---
+
+## 2️⃣7️⃣ Reading a File Line by Line in Python
+
+**Answer:**
+
+The best way is using a context manager:
+
+```python
+with open("abc.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+```
+
+Why:
+
+* Memory efficient
+* Automatically closes file
+* Clean and readable code
+
+---
+
+## 2️⃣8️⃣ Experience with AWS Lambda
+
+**Answer:**
+
+Yes, I have worked with **AWS Lambda functions**.
+
+Use cases:
+
+* Event-driven automation
+* File processing in S3
+* Scheduled jobs
+* API backends
+* CI/CD automation tasks
+
+Lambda is serverless, so:
+
+* No server management
+* Auto scaling
+* Pay only for execution time
+
+---
+
+## 2️⃣9️⃣ AWS Lambda Handlers – How They Work
+
+**Answer:**
+
+A Lambda handler is the **entry point** of the function.
+
+Format:
+
+```python
+def lambda_handler(event, context):
+    return "Hello World"
+```
+
+* `event` → input data (API, S3, SNS, etc.)
+* `context` → runtime metadata
+
+When an event occurs:
+
+* AWS invokes the handler
+* Code executes
+* Output is returned or passed to the next service
+
+---
+
+
 
 
