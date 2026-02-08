@@ -771,9 +771,8 @@ When an event occurs:
 * Output is returned or passed to the next service
 
 ---
-
-
 ---
+### lambda function
 
 A lambda function is a small, "anonymous" function that has no name and is defined in a single line. It is used for quick, throwaway tasks.
 Syntax: lambda arguments: expression.
@@ -796,7 +795,7 @@ Explanation: You use the keyword lambda instead of def. There is no return state
 
 ---
 
-### 2. What is a Lambda Handler?
+### Lambda Handler?
 
 A Lambda Handler is a specific function used in AWS Lambda (a serverless cloud service). It serves as the entry point for your code—similar to a main() function.
 Syntax: `def lambda_handler(event, context):`
