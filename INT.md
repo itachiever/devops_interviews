@@ -1,6 +1,4 @@
-Company: Indus Net Techniologies
-Experience: 2.3 YOE
-Role: DevOps Engineer
+Company: Indus Net Techniologies | Experience: 2.3 YOE | Role: DevOps Engineer
 # Questions:
 
 1. Self Introduction
