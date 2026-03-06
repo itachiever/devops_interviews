@@ -14,6 +14,7 @@
 ---
 
 # QUestions:
+
 1. Self Introduction
 2. Write a Linux shell script to get even and odd numbers from an array.
 3. Write a Linux command or script to get the 3rd element (or 3rd line) from a file.
