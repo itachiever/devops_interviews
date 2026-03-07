@@ -1,4 +1,4 @@
-# Role: DevOps (Jenkins) — AMD, Hyderabad
+# Role: DevOps (Jenkins) - AMD, Hyderabad
 
 The candidate should have experience in DevOps engineering with strong expertise in Jenkins.
 
@@ -19,4 +19,6 @@ The candidate should have experience in DevOps engineering with strong expertise
 - Strong understanding of modern **SDLC best practices and workflows**
 - Proven experience designing, implementing, and managing **CI/CD pipelines using Jenkins** to automate build, test, and deployment processes
 
-<img width="880" height="481" alt="image" src="https://github.com/user-attachments/assets/4d4fc9d7-2cfe-428d-82ea-d35997bf27f1" />
+# 1st Round
+
+# 2nd Round
