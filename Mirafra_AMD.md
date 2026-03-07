@@ -1,4 +1,4 @@
-# Role: DevOps (Jenkins) - AMD
+# Role: DevOps (Jenkins)
 
 The candidate should have experience in DevOps engineering with strong expertise in Jenkins.
 
