@@ -1,6 +1,5 @@
 
-Nouveau Labs AI Interview 1st Screening Round Cloud Infra Engineer 4YOE 2026 02 26 07 04 10
-
+# Questions
 1. **Describe a scenario where you had to design or debug a distributed system. How did you ensure scalability and reliability while addressing networking challenges?**
 
 2. **Could you give a specific example from your experience where you actually designed or debugged a distributed system?**
