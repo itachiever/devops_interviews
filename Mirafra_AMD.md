@@ -1,4 +1,4 @@
-# Role: DevOps (Jenkins) - AMD, Hyderabad
+# Role: DevOps (Jenkins) - AMD
 
 The candidate should have experience in DevOps engineering with strong expertise in Jenkins.
 
