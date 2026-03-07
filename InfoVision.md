@@ -13,7 +13,7 @@
 
 ---
 
-# QUestions:
+# Questions:
 
 1. Self Introduction
 2. Write a Linux shell script to get even and odd numbers from an array.
