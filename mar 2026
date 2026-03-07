@@ -1,0 +1,34 @@
+
+Nouveau Labs AI Interview 1st Screening Round Cloud Infra Engineer 4YOE 2026 02 26 07 04 10
+
+1. **Describe a scenario where you had to design or debug a distributed system. How did you ensure scalability and reliability while addressing networking challenges?**
+
+2. **Could you give a specific example from your experience where you actually designed or debugged a distributed system?**
+
+3. **What specific networking challenges did you encounter in that scenario and how did you address them?**
+
+4. **What monitoring or observability tools did you implement to ensure the system remained reliable and detect issues before they impacted users?**
+
+5. **What approach would you take to write a highly efficient and maintainable microservice in one of your preferred programming languages?**
+
+6. **What specific patterns or practices do you follow to ensure the microservice is both efficient and maintainable?**
+
+7. **How would you leverage the services of a cloud platform like AWS or GCP to design a cost-effective and scalable solution for a high-traffic application?**
+
+8. **Could you give a specific example of how you would handle cost optimization when you have unpredictable traffic spikes?**
+
+9. **What steps would you take to ensure a CI/CD pipeline is robust, reliable, and capable of handling large-scale deployments?**
+
+10. **How would you specifically handle rollback strategies when a deployment fails at scale?**
+
+11. **What specific strategy would you implement to handle rollbacks during a large-scale deployment?**
+
+12. **How would you use infrastructure-as-code tools like Terraform or Ansible to automate the deployment of a secure and scalable system?**
+
+13. **How would you design a caching strategy using Redis for a high-traffic application to improve performance?**
+
+14. **How would you configure Redis for high availability in that scenario?**
+
+15. **What are some ways AI/ML technologies can be leveraged to improve infrastructure monitoring and management?**
+
+16. **What strategies would you deploy to ensure high availability and low latency in a production system handling millions of requests per second?**
