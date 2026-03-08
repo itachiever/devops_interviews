@@ -30,7 +30,7 @@
 
 # Role: DevSecOps
 # Company: Curatal
-# Client: Sony India
+# Client: Sony India Software Centre Private Limited (SISCPL) 
 # Interview: 1st Round (by Curatal)
 # Experience: 4 years
 
