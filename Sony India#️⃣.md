@@ -1,7 +1,7 @@
 ### Job Description
 ### Role: DevSecOps Engineer
 
-### Experience: 4 – 6 Years
+### Experience: 4 - 6 Years
 
 ### Key Skills
 
