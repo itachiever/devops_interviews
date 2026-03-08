@@ -56,9 +56,9 @@
 
 ### Questions I asked:
 
-9. **Is this requirement for in-house or for Sony India? What kind of project or requirements are there?**
+1. **Is this requirement for in-house or for Sony India? What kind of project or requirements are there?**
 
-10. **What might be the further process if my profile gets forwarded?**
+2. **What might be the further process if my profile gets forwarded?**
 
 ---
 
