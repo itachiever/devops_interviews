@@ -26,6 +26,8 @@
 11. Identify opportunities to **improve delivery processes and cloud adoption strategies**.
 12. Stay current with **AWS services and emerging cloud technologies**.
 
+
+
 ------
 
 
