@@ -1,4 +1,4 @@
-### Job Title: DevSecOps Engineer (Contract)
+### Job Title: DevSecOps Engineer
 
 ### Experience: 4 – 6 Years
 
