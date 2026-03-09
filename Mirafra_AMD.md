@@ -56,5 +56,82 @@ The candidate should have experience in DevOps engineering with strong expertise
 11. Do you have any questions for me?
 
 ---
+# 1st Round Answers:
+---
 
-# 2nd Round
+### **1. Day-to-day activities?**
+*   **Monitoring:** Checking server health & dashboards.
+*   **CI/CD:** Managing Jenkins/GitLab pipelines and deployments.
+*   **Maintenance:** Patching servers and rotating secrets.
+*   **Collaboration:** Meeting with developers for requirements and troubleshooting.
+*   **Automation:** Writing scripts to automate manual tasks.
+
+### **2. Stages of a CI/CD Pipeline**
+1.  **Source/Checkout:** Pull code from repo (GitHub/Bitbucket).
+2.  **Build:** Compile code (Maven/npm).
+3.  **Test:** Run automated tests (Unit/Integration).
+4.  **Deploy (Staging):** Deploy to test environment.
+5.  **Deploy (Production):** Deploy to live environment for users.
+
+### **3. Project Description**
+*   **Project:** E-commerce Application (Microservices).
+*   **Architecture:** Hosted on AWS (EC2).
+*   **Role:** CI/CD & IaC (Jenkins, Docker, Ansible).
+*   **Outcome:** Reduced deployment time; enabled zero-downtime releases.
+
+### **4. SonarQube & Issue Handling**
+*   **Integration:** Scanned code automatically in Jenkins pipeline.
+*   **Quality Gate:** Blocked deployment if critical bugs found.
+*   **Handling:** Checked dashboard daily; worked with devs to fix vulnerabilities and code smells.
+
+### **5. Automation Scripts**
+*   **Bash:** Log cleanup (deletes logs older than 30 days).
+*   **Python:** Backup script (uploads to AWS S3).
+*   **Script:** Auto-restart service if it stops responding.
+
+### **6. Core Python Concepts**
+*   **Basics:** Variables, Data Types, Loops, Functions.
+*   **File Handling:** Reading/Writing files.
+*   **OOP:** Classes, Objects, Encapsulation.
+*   **Libraries:** Used `Boto3` for AWS automation.
+
+### **7. Python Program (Dictionary)**
+```python
+# Create Dict
+my_dict = {}
+
+# Insert Pairs
+my_dict['name'] = 'Mirafra'
+my_dict['role'] = 'DevOps'
+
+# Print Keys
+for key in my_dict.keys():
+    print(key)
+
+# Print Values
+for value in my_dict.values():
+    print(value)
+```
+
+### **8. OOP Concepts (Object-Oriented Programming)**
+*   **Class:** Blueprint/Template (e.g., Car).
+*   **Object:** Instance of the class (e.g., Red Ferrari).
+*   **Encapsulation:** Hiding internal details.
+*   **Inheritance:** Creating new class from existing one (e.g., Sports Car extends Car).
+
+### **9. Containerization**
+*   **Definition:** Packaging app + dependencies into a single "Container."
+*   **Benefit:** Runs exactly the same on Laptop, Test Server, and Cloud.
+*   **Tool:** Docker.
+
+### **10. Checking Build Failures**
+*   **Method:** Check Console Output/Logs.
+*   **Responsibility:**
+    *   **Code Error:** Developer fixes it.
+    *   **Infra Error:** DevOps Engineer fixes it.
+
+### **11. Questions for Interviewer**
+1.  Team size and current tools used?
+2.  Upcoming projects/technologies?
+3.  Learning and certification support?
+
