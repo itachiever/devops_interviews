@@ -19,12 +19,9 @@ The candidate should have experience in DevOps engineering with strong expertise
 - Strong understanding of modern **SDLC best practices and workflows**
 - Proven experience designing, implementing, and managing **CI/CD pipelines using Jenkins** to automate build, test, and deployment processes
 
-# 1st Round
-
-Mirafra 1st Round :
-
-
 ---
+
+# 1st Round
 
 1. Day-to-day activities?
 
@@ -44,14 +41,7 @@ Mirafra 1st Round :
 6. Are you familiar with core Python programming concepts?
 
 
-7. Write a Python program to:
-
-Create a dictionary
-
-Insert key-value pairs
-
-Print dictionary keys and values
-
+7. Write a Python program to: Create a dictionary, Insert key-value pairs, Print dictionary keys and values
 
 
 8. Have you worked with Python? a) Explain Object-Oriented Programming (OOP) concepts.
@@ -65,5 +55,6 @@ Print dictionary keys and values
 
 11. Do you have any questions for me?
 
+---
 
 # 2nd Round
