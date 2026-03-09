@@ -21,4 +21,49 @@ The candidate should have experience in DevOps engineering with strong expertise
 
 # 1st Round
 
+Mirafra 1st Round :
+
+
+---
+
+1. Day-to-day activities?
+
+
+2. Explain the various stages of a CI/CD pipeline.
+
+
+3. Can you describe the project you worked on?
+
+
+4. How did you work with SonarQube and handle the issues reported?
+
+
+5. What automation scripts have you written or used?
+
+
+6. Are you familiar with core Python programming concepts?
+
+
+7. Write a Python program to:
+
+Create a dictionary
+
+Insert key-value pairs
+
+Print dictionary keys and values
+
+
+
+8. Have you worked with Python? a) Explain Object-Oriented Programming (OOP) concepts.
+
+
+9. What exactly is meant by containerization?
+
+
+10. How do you check build failures? Is there a dedicated team for handling them?
+
+
+11. Do you have any questions for me?
+
+
 # 2nd Round
