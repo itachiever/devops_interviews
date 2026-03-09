@@ -3,7 +3,6 @@
 The candidate should have experience in DevOps engineering with strong expertise in Jenkins.
 
 ## Required Skill Set
-
 ### Must Have Skills
 - Expertise in **Jenkins**, including pipeline scripting and plugin management
 - Experience with **Grafana** and **SonarQube**
