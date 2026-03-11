@@ -141,13 +141,13 @@ for value in my_dict.values():
 1. Can you briefly introduce yourself?
 
 
-2. Are you a permanent employee at TCS?
+2. Are you a permanent employee at current company?
 
 
 3. Are you on bond?
 
 
-4. What was your designation at TCS and who was the client?
+4. What was your designation at current company and who was the client?
 
 
 5. Are you serving your notice period? What is your last working day (LWD)?
@@ -202,3 +202,100 @@ for value in my_dict.values():
 
 
 22. What do you know about Misafira?
+
+---
+# Answers: (2nd Round)
+---
+
+### **1. Can you briefly introduce yourself?**
+*   **Role:** DevSecOps Engineer with **2.5–3 years** experience.
+*   **Background:** Worked at **current company name** on Infrastructure & CI/CD.
+*   **Tech Stack:** AWS, Azure, Kubernetes, Python, Jenkins.
+*   **Goal:** Looking for dynamic environment to apply security skills.
+
+### **2. Are you a permanent employee at current company name?**
+*   Yes, permanent employee.
+
+### **3. Are you on bond?**
+*   Yes, bond valid for **[Number]** years.
+
+### **4. Designation & Client at current company name?**
+*   **Designation:** System Engineer / DevOps Engineer.
+*   **Client:** **[Client Name]** (Banking/Telecom).
+*   **Work:** AWS Infra & Jenkins Pipelines.
+
+### **5. Notice Period & Last Working Day?**
+*   Status: Serving notice period.
+*   **LWD:** **[Date]**.
+
+### **6. Current CTC Structure?**
+*   **CTC:** **[Amount]** LPA.
+*   **Type:** **Fixed** [or: Fixed + Variable Pay].
+
+### **7. Last Hike Percentage?**
+*   Approx. **[Percentage]%**.
+
+### **8. Holding Offers / Resignation Reason?**
+*   **Status:** No other offers.
+*   **Reason:** Saturation in current role; seeking growth in **DevSecOps** & **Cloud Security**.
+
+### **9. Expected CTC?**
+*   **Range:** **[Lower Limit]** – **[Upper Limit]** LPA.
+
+### **10. Relocation & Current Location?**
+*   **Open to:** Yes, open to relocating to **Hyderabad**.
+*   **Current Location:** **[Your City]**.
+
+### **11. Reason for Job Change?**
+*   Seeking **hands-on exposure** to **Cloud Security** & **Kubernetes**.
+*   Want to move from maintenance to **architectural decisions**.
+
+### **12. Family Members?**
+*   **Count:** **[Number]** members.
+*   **Parents:** Father (**[Occupation]**) & Mother (**[Occupation]**).
+*   **Siblings:** **[Number]** (Studying/Working).
+
+### **13. Marital Status?**
+*   **Single** [or: **Married**].
+
+### **14. Why applied to Mirafra?**
+*   Reputation in **Embedded Systems** & **Engineering**.
+*   Focus on **Quality** and **Innovation**.
+*   Aligns with career goals.
+
+### **15. Most Productive Workplace Type?**
+*   **Culture:** Transparency & Knowledge Sharing.
+*   **Environment:** Collaboration with cross-functional teams.
+*   **Focus:** Continuous learning.
+
+### **16. New Opportunities Looking For?**
+*   **Previous:** Focus on maintenance.
+*   **New:** **Ownership** of architecture & **DevSecOps** implementation.
+
+### **17. Biggest Achievement (2.5–3 Years)?**
+*   **Project:** Automated CI/CD pipeline for critical client.
+*   **Impact:** Reduced deployment time from **1 hr to 5 mins**.
+*   **Result:** Zero downtime & reduced manual errors.
+
+### **18. Handling Pressure?**
+*   **Approach:** **Prioritize** tasks immediately.
+*   **Mindset:** Stay calm, communicate clearly.
+*   **Focus:** Step-by-step problem solving.
+
+### **19. Contribution to Mirafra?**
+*   **Automation:** Streamline processes.
+*   **Security:** Integrate **SonarQube** & **Trivy**.
+*   **Cloud:** Share **Azure/AWS** best practices.
+
+### **20. Challenges Faced & Overcome?**
+*   **Challenge:** Code conflicts/dependencies between teams.
+*   **Solution:** Standardized build environment using **Docker**.
+
+### **21. Salary vs. Job Oriented?**
+*   **Primary:** **Job-oriented** (Value addition & Learning).
+*   **Secondary:** Fair compensation for skills.
+
+### **22. What do you know about Mirafra?**
+*   **Domain:** Product Engineering & Embedded Solutions.
+*   **Industries:** Automotive, Medical, Consumer Electronics.
+*   **Focus:** Innovation, R&D, and Global Clients.
