@@ -134,3 +134,71 @@ for value in my_dict.values():
 2.  Upcoming projects/technologies?
 3.  Learning and certification support?
 
+---
+# 2nd Round
+### Questions:
+
+1. Can you briefly introduce yourself?
+
+
+2. Are you a permanent employee at TCS?
+
+
+3. Are you on bond?
+
+
+4. What was your designation at TCS and who was the client?
+
+
+5. Are you serving your notice period? What is your last working day (LWD)?
+
+
+6. What is your current CTC? Is it fixed or does it include variable pay?
+
+
+7. What was your last hike percentage?
+
+
+8. Are you holding any offers? If not, why did you resign without an offer?
+
+
+9. What is your expected CTC?
+
+
+10. Are you open to relocating to Hyderabad? What is your current location?
+
+
+11. What is the reason for your job change?
+
+
+12. Can you tell me about your family members?
+
+
+13. Are you single or married?
+
+
+14. Why did you apply to Misafira?
+
+
+15. Describe the type of workplace where you are most productive.
+
+
+16. What new opportunities are you looking for compared to your previous role?
+
+
+17. What is your biggest achievement in your 2.5–3 years of experience?
+
+
+18. How do you handle working under pressure?
+
+
+19. How can you contribute to our company after joining?
+
+
+20. What challenges have you faced and how did you overcome them?
+
+
+21. Are you salary-oriented or job-oriented?
+
+
+22. What do you know about Misafira?
