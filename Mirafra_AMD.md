@@ -214,10 +214,10 @@ for value in my_dict.values():
 *   **Goal:** Looking for dynamic environment to apply security skills.
 
 ### **2. Are you a permanent employee at current company name?**
-*   Yes, permanent employee.
+*   Yes
 
 ### **3. Are you on bond?**
-*   Yes, bond valid for **[Number]** years.
+*   No
 
 ### **4. Designation & Client at current company name?**
 *   **Designation:** System Engineer / DevOps Engineer.
