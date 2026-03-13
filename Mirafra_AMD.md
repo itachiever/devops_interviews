@@ -299,3 +299,98 @@ for value in my_dict.values():
 *   **Domain:** Product Engineering & Embedded Solutions.
 *   **Industries:** Automotive, Medical, Consumer Electronics.
 *   **Focus:** Innovation, R&D, and Global Clients.
+
+---
+
+Company : Mirafra (Client : AMD 1st round) 
+Role : DevOps Engineer 
+Interview : 3rd Round
+Experience : 2.5 Years
+
+# Questions:
+
+1. Can you tell me about yourself?
+
+
+2. Have you worked on containers? Can you elaborate?
+
+
+3. What are the advantages of containers over physical machines?
+
+
+4. How would you rate yourself in Python scripting?
+
+
+5. What are list comprehensions in Python? (Write code)
+
+
+6. What is a lambda function in Python? (Write code)
+
+
+7. Write a function to check whether a string is a palindrome.
+
+
+8. Write a Python script to monitor file creation: check every 2 minutes for up to 2 hours for a file named success.txt; print “Success” if created, otherwise print “Fail” after 2 hours.
+
+
+9. In a folder containing multiple directories, how would you get the size of each directory and perform the task in parallel?
+
+
+10. Since when have you been working on Python?
+
+
+11. What Root Cause Analysis (RCA) have you done? What was the problem and how did you solve it?
+
+
+12. Have you worked on build failures or build debugging?
+
+
+13. How would you rate yourself in Jenkins?
+
+
+14. If the Jenkins instance is slow, how would you debug it?
+
+
+15. If a Linux machine is slow, what would you do?
+
+
+16. What commands do you use to check RAM and CPU usage in Linux?
+
+
+17. How would you rate yourself in Linux?
+
+
+18. Have you worked with Jenkins Groovy scripting?
+
+
+19. Tell me about the most complicated Groovy pipeline you have written.
+
+
+20. Do you have any questions for me?
+
+
+21. Do you know GitHub Actions or GitLab Actions? Have you written custom actions?
+
+
+22. (My Question) Can you please explain the project overview, type of work, and task size?
+
+
+23. (Interviewer Response) Roles & Responsibilities:
+  - Development and building of Jenkins pipelines using Python and Groovy scripting
+  - Python automation and directory automation as primary focus
+  - Currently no containers; Terraform is planned in the roadmap within 6 months to 1 year
+  - DevOps team supporting 1000+ developers
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
