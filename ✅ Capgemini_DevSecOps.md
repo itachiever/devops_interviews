@@ -47,9 +47,13 @@
 # Questions
 
 1. Give me an introduction about yourself.
+
 2. What technologies are you working on right now, and what are your years of experience?
+
 3. How good are you in Azure?
+
 4. I have an RBAC role assigned, but I am not able to access the Key Vault; why would this happen?
+
 5. How would you deploy resources in a scenario where the setup is sitting behind a private endpoint and requests should not go outside?
 6. Would you recommend having a different repository for the CD part or doing CI and CD in the same repository?
 7. Do you know how to create Docker images?
