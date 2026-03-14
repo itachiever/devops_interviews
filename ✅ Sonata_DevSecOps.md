@@ -13,7 +13,6 @@ Role: DevSecOps Engineer
 * EKS
 * GitLab security scanning
 
----
 
 ### Requirements
 
@@ -33,7 +32,6 @@ Role: DevSecOps Engineer
 * Demonstrated willingness to take accountability and ownership to solve problems.
 * Must be authorized to work in the United States.
 
----
 
 ### Nice to Have
 
@@ -42,7 +40,6 @@ Role: DevSecOps Engineer
 * Experience with policy-as-code tools (OPA, Sentinel, AWS Config rules).
 * Experience supporting production incident response and post-incident analysis.
 
----
 
 ### Roles & Responsibilities
 
@@ -66,3 +63,11 @@ This role combines strong cloud engineering, security, and automation skills to 
 
 # Questions:
 
+1. Can you just quickly give a brief intro about yourself?
+2. Your company wants to move to a batch data processing workflow from on-prem to AWS, ensuring data is ingested, processed, and results delivered daily with full traceability. Which AWS services would you choose and how would you architect the solutions for reliability and monitoring?
+3. You need to migrate a legacy on-prem web app with a relational database to AWS ensuring high scalability, availability, and minimal downtime. What AWS services and architecture would you use and how do you plan the migration?
+4. You are responsible for maintaining multiple CloudFormation stacks with resources that have strict compliance and security requirements. How do you ensure and validate that only approved resource configurations are deployed, both initially and during updates?
+5. A critical production stack managed by CloudFormation contains resources with strict policies. How do you safely decommission this stack ensuring compliance with retention requirements and avoiding accidental data loss or service disruption?
+6. A development team wants to rapidly deploy new features but are concerned about introducing security risks. As a DevSecOps expert, how do you balance the need for speed with robust security in this scenario?
+7. How comfortable are you writing scripts? How comfortable are you in Python?
+8. Write a Python script that automatically rotates and archives log files in a specific directory.
