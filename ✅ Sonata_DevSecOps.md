@@ -60,7 +60,7 @@ This role combines strong cloud engineering, security, and automation skills to 
 * Identify opportunities to streamline delivery processes and improve cloud adoption strategies.
 
 ---
-
+1st Round (30 min)
 # Questions:
 
 1. Can you just quickly give a brief intro about yourself?
