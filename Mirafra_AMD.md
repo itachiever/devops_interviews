@@ -380,7 +380,279 @@ Experience : 2.5 Years
   - Python automation and directory automation as primary focus
   - Currently no containers; Terraform is planned in the roadmap within 6 months to 1 year
   - DevOps team supporting 1000+ developers
+---
+# Answers:
 
+#### **Q1. Can you tell me about yourself?**
+
+**Answer:**
+"I am a DevOps Engineer with 2.5 years of experience. My core expertise is in CI/CD pipeline creation using Jenkins, containerization with Docker, and infrastructure automation. In my current role, I focus heavily on Python scripting to automate manual tasks and manage large-scale infrastructure supporting developers. I am passionate about optimizing build processes and integrating DevSecOps practices."
+
+---
+
+#### **Q2. Have you worked on containers? Can you elaborate?**
+
+**Answer:**
+"Yes, I have hands-on experience with Docker. I have written Dockerfiles using multi-stage builds to optimize image size. I manage container lifecycle, storage, and networking. I also use Docker Compose to orchestrate multi-container environments for local development and testing."
+
+---
+
+#### **Q3. What are the advantages of containers over physical machines?**
+
+**Answer:**
+1.  **Lightweight:** Containers share the host OS kernel, requiring less resources than VMs.
+2.  **Speed:** They boot up in seconds compared to minutes for VMs.
+3.  **Portability:** The application runs consistently across dev, test, and prod environments.
+4.  **Scalability:** We can spin up/down containers rapidly to handle load changes.
+
+---
+
+#### **Q4. How would you rate yourself in Python scripting?**
+
+**Answer:**
+"I would rate myself an 8 out of 10. I am proficient in writing automation scripts, handling file operations, working with APIs (Boto3), and using Python within CI/CD pipelines. I am confident in using advanced features like list comprehensions and multi-processing for performance optimization."
+
+---
+
+#### **Q5. What are list comprehensions in Python? (Write Code)**
+
+**Answer:**
+"List comprehension is a concise way to create lists in a single line of code, making it more readable and often faster than traditional loops."
+
+**Code:**
+```python
+# Traditional Loop
+squares = []
+for x in range(10):
+    squares.append(x**2)
+
+# List Comprehension
+squares = [x**2 for x in range(10)]
+print(squares) 
+# Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+---
+
+#### **Q6. What is a lambda function in Python? (Write Code)**
+
+**Answer:**
+"A lambda is an anonymous function defined without a name. It takes arguments and contains a single expression. It is useful for short, throwaway operations."
+
+**Code:**
+```python
+# Lambda function to add two numbers
+add = lambda x, y: x + y
+
+print(add(5, 3))
+# Output: 8
+
+# Usage with sorted
+users = [{'name': 'A', 'age': 25}, {'name': 'B', 'age': 20}]
+sorted_users = sorted(users, key=lambda x: x['age'])
+print(sorted_users)
+```
+
+---
+
+#### **Q7. Write a function to check whether a string is a palindrome.**
+
+**Answer:**
+"I check if the string equals its reverse using string slicing `[::-1]`."
+
+**Code:**
+```python
+def is_palindrome(s):
+    # Optional: Remove spaces and lowercase for strict checking
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+
+# Test
+print(is_palindrome("madam")) # True
+print(is_palindrome("hello")) # False
+print(is_palindrome("Race car")) # True
+```
+
+---
+
+#### **Q8. Write a Python script to monitor file creation.**
+**Scenario:** Check every 2 minutes for up to 2 hours for `success.txt`. Print "Success" if found, else "Fail".
+
+**Answer:**
+"I will use `os.path.exists` inside a loop with `time.sleep`. Total checks = 60 (2 hours / 2 minutes)."
+
+**Code:**
+```python
+import os
+import time
+
+def monitor_file():
+    filename = "success.txt"
+    interval = 120       # 2 minutes in seconds
+    total_duration = 7200 # 2 hours in seconds
+    
+    # Calculate number of checks
+    iterations = int(total_duration / interval)
+
+    for i in range(iterations):
+        if os.path.exists(filename):
+            print("Success")
+            return # Stop the script if found
+        time.sleep(interval)
+    
+    print("Fail")
+
+# Uncomment to test
+# monitor_file()
+```
+
+---
+
+#### **Q9. In a folder containing multiple directories, get the size of each directory in parallel.**
+
+**Answer:**
+"I use `os.walk` to calculate directory size and `multiprocessing.Pool` to execute the task in parallel for better performance."
+
+**Code:**
+```python
+import os
+from multiprocessing import Pool
+
+# 1. Function to calculate size of a single directory
+def get_dir_size(directory):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(directory):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            # skip symbolic links
+            if not os.path.islink(fp):
+                total_size += os.path.getsize(fp)
+    return (directory, total_size)
+
+# 2. Main logic to run in parallel
+if __name__ == '__main__':
+    target_path = '.'  # Current directory
+    
+    # Get all subdirectories
+    dirs = [d for d in os.listdir(target_path) if os.path.isdir(d)]
+    
+    # Create a pool of workers (parallel processing)
+    with Pool() as pool:
+        results = pool.map(get_dir_size, dirs)
+    
+    # Print results
+    for directory, size in results:
+        print(f"Dir: {directory} | Size: {size / (1024*1024):.2f} MB")
+```
+
+---
+
+#### **Q10. Since when have you been working on Python?**
+
+**Answer:**
+"I have been using it professionally for DevOps automation for the past 2.5 years in my daily work."
+
+---
+
+#### **Q11. What Root Cause Analysis (RCA) have you done?**
+
+**Answer:**
+"I investigated a case where Jenkins build agents were frequently disconnecting.
+**Root Cause:** Analysis of system logs (`/var/log/syslog`) showed memory exhaustion caused by 'zombie' processes from previous builds that weren't killed properly.
+**Solution:** I implemented a cleanup script in the Jenkins pipeline's `post` block to kill hanging processes and added memory alerts to the monitoring system."
+
+---
+
+#### **Q12. Have you worked on build failures or build debugging?**
+
+**Answer:**
+"Yes. I debug build failures by:
+1. Checking the **Console Output** for syntax or dependency errors.
+2. SSH-ing into the agent to manually run the failed commands to replicate the environment.
+3. Checking for **disk space** issues (`df -h`) if the error is random."
+
+---
+
+#### **Q13. How would you rate yourself in Jenkins?**
+
+**Answer:**
+"I rate myself 8.5/10. I am proficient in pipeline creation (Declarative & Scripted), managing plugins, master-agent configuration, and Jenkins administration (backup, security, and performance tuning)."
+
+---
+
+#### **Q14. If the Jenkins instance is slow, how would you debug it?**
+
+**Answer:**
+1. **Check Resources:** Use `top` to check CPU/RAM on the Master node.
+2. **Check Heap Size:** Verify if the Java Heap memory is sufficient in the Jenkins config.
+3. **Executors:** Reduce the number of executors on Master to offload work to Agents.
+4. **Plugins:** Check for outdated or conflicting plugins in the logs.
+
+---
+
+#### **Q15. If a Linux machine is slow, what would you do?**
+
+**Answer:**
+1. **CPU:** `top` or `htop` to find high CPU processes.
+2. **Memory:** `free -m` to check RAM usage.
+3. **Disk I/O:** `iostat` or `iotop` to check if the disk is overloaded.
+4. **Kill Processes:** Identify the problematic PID and kill it if necessary.
+
+---
+
+#### **Q16. Commands to check RAM and CPU usage?**
+
+**Answer:**
+*   **RAM:** `free -h` (Human readable) or `cat /proc/meminfo`.
+*   **CPU:** `top`, `htop`, or `mpstat`.
+*   **Disk:** `df -h`.
+
+---
+
+#### **Q17. How would you rate yourself in Linux?**
+
+**Answer:**
+"8 out of 10. I am comfortable with shell scripting, file permissions, systemd service management, log analysis, and network troubleshooting. I use Linux daily as my primary working environment."
+
+---
+
+#### **Q18. Have you worked with Jenkins Groovy scripting?**
+
+**Answer:**
+"Yes. While I prefer Declarative Pipelines for simplicity, I use Scripted Pipelines or `script` blocks for complex logic, such as generating stages dynamically or handling advanced error handling logic."
+
+---
+
+#### **Q19. Tell me about the most complicated Groovy pipeline you have written.**
+
+**Answer:**
+"I wrote a dynamic pipeline for a microservices project. The pipeline scanned the Git commit, detected which folders (microservices) changed, and then programmatically generated parallel build stages only for those services. This reduced the build time from 1 hour to 10 minutes."
+
+---
+
+#### **Q20. Do you have any questions for me?**
+
+**Answer:**
+"Yes.
+1. Can you describe the current team structure and how DevOps collaborates with developers?
+2. What is the biggest technical challenge the team is facing right now?"
+
+---
+
+#### **Q21. Do you know GitHub Actions or GitLab Actions?**
+
+**Answer:**
+"Yes, I have experience with GitHub Actions. I have written YAML workflows to build, test, and deploy code. I have used marketplace actions as well as custom shell scripts within the workflow steps."
+
+---
+
+#### **Q22 & 23. Job Role Analysis (The Interviewer's Response)**
+
+**Summary for Viewers:**
+*   **Primary Focus:** Python Automation & Jenkins Groovy Scripting.
+*   **Scale:** Supporting 1000+ developers.
+*   **Tech Stack:** Currently no containers; Terraform is planned for the roadmap (6-12 months).
+*   **Key Takeaway:** Strong Python skills are critical for this role to handle directory automation and internal tooling.
 
  
 
