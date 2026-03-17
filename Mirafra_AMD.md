@@ -135,7 +135,8 @@ for value in my_dict.values():
 3.  Learning and certification support?
 
 ---
-# 2nd Round
+# 2nd Round Questions
+---
 ### Questions:
 
 1. Can you briefly introduce yourself?
@@ -204,7 +205,7 @@ for value in my_dict.values():
 22. What do you know about Misafira?
 
 ---
-# Answers: (2nd Round)
+# 2nd Round Answers
 ---
 
 ### **1. Can you briefly introduce yourself?**
@@ -306,9 +307,9 @@ Company : Mirafra (Client : AMD 1st round)
 Role : DevOps Engineer 
 Interview : 3rd Round
 Experience : 2.5 Years
-
-# Questions:
-
+---
+# 3rd Round Questions
+---
 1. Can you tell me about yourself?
 
 
@@ -381,7 +382,8 @@ Experience : 2.5 Years
   - Currently no containers; Terraform is planned in the roadmap within 6 months to 1 year
   - DevOps team supporting 1000+ developers
 ---
-# Answers:
+# 3rd Round Answers
+---
 
 #### **Q1. Can you tell me about yourself?**
 
@@ -661,8 +663,9 @@ Company : Mirafra (Client : AMD 2nd round)
 Role : DevOps Engineer 
 Interview : 4th Round
 Experience : 2.5 Years
-
-# Questions:
+---
+# 4th Round Questions
+---
 
 1. Checked resume.(no formal intro asked)
 
@@ -723,7 +726,234 @@ Experience : 2.5 Years
 
 20. Do you have any questions for me?
 
+---
+# 4th Round Answers
+---
 
+#### **Q1. Checked resume. (no formal introduction asked)**
+
+**Answer:**
+"The interview started directly with resume verification. I confirmed the details on my resume, specifically highlighting my Python automation and Jenkins pipeline experience, as no formal introduction was requested."
+
+---
+
+#### **Q2. What Python exposure do you have? Where have you used it?**
+
+**Answer:**
+"I have used Python extensively for DevOps automation tasks. This includes writing scripts for file/directory management, interacting with AWS services using the Boto3 SDK, and making REST API calls to monitor application health. I replaced legacy Bash scripts with Python to improve error handling and readability."
+
+---
+
+#### **Q3. How do you make an API call using Python? Can you write the code?**
+
+**Answer:**
+"I use the `requests` library to make HTTP calls. Below is the code to fetch data from an API."
+
+**Code:**
+```python
+import requests
+
+def make_api_call():
+    url = "https://jsonplaceholder.typicode.com/posts/1"
+    
+    try:
+        response = requests.get(url)
+        
+        if response.status_code == 200:
+            print("Success:", response.json())
+        else:
+            print("Failed:", response.status_code)
+            
+    except requests.exceptions.RequestException as e:
+        print("Error:", e)
+
+make_api_call()
+```
+
+---
+
+#### **Q4. If the requests module is not working, how would you debug the issue?**
+
+**Answer:**
+"I would follow these steps:
+1. **Import Check:** Verify if the module is installed using `pip list`.
+2. **Environment:** Check if the correct Virtual Environment is activated.
+3. **Network:** Verify if a corporate proxy or firewall is blocking the connection.
+4. **SSL:** Check for certificate issues if it is an HTTPS call."
+
+---
+
+#### **Q5. If the requests module is installed in a different location and you want to load it, how would you do that?**
+
+**Answer:**
+"I would add the custom installation path to `sys.path` so the Python interpreter can locate the module."
+
+**Code:**
+```python
+import sys
+
+# Add custom path
+sys.path.append('/custom/path/to/site-packages')
+
+import requests
+print("Module loaded successfully")
+```
+
+---
+
+#### **Q6. Have you written any pipeline code in Jenkins using Groovy?**
+
+**Answer:**
+"Yes. I have written Declarative Pipelines and used Scripted blocks inside them for complex logic. I have experience generating dynamic stages and handling error flows using Groovy syntax."
+
+---
+
+#### **Q7. Do you have knowledge of GitHub Actions?**
+
+**Answer:**
+"Yes. I have experience writing YAML workflow files for GitHub Actions. I have worked on triggers, job dependencies, and using marketplace actions, as well as migrating Jenkins pipelines to GitHub Actions."
+
+---
+
+#### **Q8. In pipelines, if I want to execute a non-blocking job (fire-and-forget mode) and not wait for the job status to finish, what option should be passed?**
+
+**Answer:**
+"In Jenkins, we pass the `wait: false` parameter when triggering the build job."
+
+**Code:**
+```groovy
+build job: 'Deployment-Job', wait: false
+```
+
+---
+
+#### **Q9. In Linux shell scripting, how can you achieve non-blocking/background execution?**
+
+**Answer:**
+"We append the ampersand symbol `&` at the end of the command to run it in the background."
+
+**Code:**
+```bash
+# This runs in background
+./long_running_script.sh &
+
+echo "Script started in background. Terminal is free."
+```
+
+---
+
+#### **Q10. If I am running 4 jobs in parallel and I want all 4 to run completely irrespective of failures, how can I ensure that behavior in a pipeline?**
+
+**Answer:**
+"I use the `catchError` step. This catches the failure, marks the stage as failed, but allows the pipeline to continue running other parallel stages."
+
+**Code:**
+```groovy
+stage('Parallel Run') {
+    parallel {
+        stage('Job A') {
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    sh 'run-job-a.sh'
+                }
+            }
+        }
+        stage('Job B') {
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    sh 'run-job-b.sh'
+                }
+            }
+        }
+    }
+}
+```
+
+---
+
+#### **Q11. What are Labels, Nodes, and Executors in Jenkins?**
+
+**Answer:**
+*   **Node:** A machine (Master or Agent) that is part of the Jenkins environment.
+*   **Executor:** A computational slot on a node. A single node can have multiple executors to run multiple jobs at once.
+*   **Label:** A tag or alias used to group similar nodes together (e.g., 'linux', 'docker').
+
+---
+
+#### **Q12. What is the basic difference between a Label and a Node?**
+
+**Answer:**
+"A **Node** is a specific physical or virtual machine (e.g., Server-IP). A **Label** is a logical group that can represent one or more nodes. We use Labels to route jobs to any available machine with specific capabilities, rather than pinning a job to a specific Node."
+
+---
+
+#### **Q13. What is the purpose of Labels and Nodes?**
+
+**Answer:**
+"The purpose is efficient **Resource Orchestration**. Nodes provide the compute resources. Labels allow us to abstract the hardware details, so jobs can be distributed across multiple machines automatically based on capability (like GPU or OS) rather than machine name."
+
+---
+
+#### **Q14. In day-to-day activities, what problems have you faced and what Root Cause Analysis (RCA) have you performed?**
+
+**Answer:**
+"**Problem:** Jenkins agents ran out of disk space.
+**RCA:** Used `du -sh *` to find large directories. Identified that old Docker images were not being pruned.
+**Solution:** Automated `docker system prune` via a cron job and added a disk check step in the pipeline."
+
+---
+
+#### **Q15. When there is a test case failure, how do you debug it? What are the main things you check?**
+
+**Answer:**
+"1. **Logs:** Check Console Output and test report (JUnit/Surefire) for assertion errors.
+2. **Code Changes:** Check Git diff for recent commits.
+3. **Environment:** Verify if ENV variables or secrets changed.
+4. **Isolation:** Run the test locally to see if it's an environment issue or code issue."
+
+---
+
+#### **Q16. If a particular host has degraded performance, how do you check and troubleshoot it?**
+
+**Answer:**
+"1. **CPU:** `top` or `htop` to check high usage.
+2. **Memory:** `free -m` to check for OOM issues.
+3. **Disk I/O:** `iostat` or `iotop` to check for high wait times.
+4. **Network:** `ping` or `netstat` to check connectivity issues."
+
+---
+
+#### **Q17. What kind of activities have you done in SonarQube?**
+
+**Answer:**
+"1. Integrated SonarQube with Jenkins/GitHub Actions pipelines.
+2. Configured `sonar-scanner` properties.
+3. Enforced Quality Gates to fail builds on low coverage or vulnerabilities.
+4. Analyzed reports to help developers fix code smells."
+
+---
+
+#### **Q18. What are Quality Profiles in SonarQube?**
+
+**Answer:**
+"A Quality Profile is a collection of rules that define what issues SonarQube should detect. For example, it contains rules for bugs, vulnerabilities, and code smells specific to a language (like Java or Python). We can customize it to tighten or relax coding standards."
+
+---
+
+#### **Q19. In Maven, what are transitive dependencies?**
+
+**Answer:**
+"Transitive dependencies are dependencies of dependencies. If Project A depends on Library B, and Library B depends on Library C, then Library C is a transitive dependency. Maven automatically downloads Library C to ensure the application runs correctly."
+
+---
+
+#### **Q20. Do you have any questions for me?**
+
+**Answer:**
+"Yes.
+1. How is the DevOps team structured, and how do they collaborate with developers?
+2. I see you have plans for Terraform; is there any roadmap for container adoption soon?
+3. What is the biggest technical challenge the team is currently facing?"
 
 
 
