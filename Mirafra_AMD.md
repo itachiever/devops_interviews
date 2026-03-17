@@ -655,8 +655,73 @@ if __name__ == '__main__':
 *   **Key Takeaway:** Strong Python skills are critical for this role to handle directory automation and internal tooling.
 
  
+---
+
+Company : Mirafra (Client : AMD 2nd round) 
+Role : DevOps Engineer 
+Interview : 4th Round
+Experience : 2.5 Years
+
+# Questions:
+
+1. Checked resume.(no formal intro asked)
 
 
+2. What Python exposure do you have? Where have you used it?
+
+
+3. How do you make an API call using Python? Can you write the code?
+
+
+4. If the requests module is not working, how would you debug the issue?
+
+
+5. If the requests module is installed in a different location and you want to load it, how would you do that?
+
+
+6. Have you written any pipeline code in Jenkins using Groovy?
+
+
+7. Do you have knowledge of GitHub Actions?
+
+
+8. In pipelines, if I want to execute a non-blocking job (fire-and-forget mode) and not wait for the job status to finish, what option should be passed?
+
+
+9. In Linux shell scripting, how can you achieve non-blocking/background execution?
+
+
+10. If I am running 4 jobs in parallel and I want all 4 to run completely irrespective of failures (i.e., one failure should not stop others), how can I ensure that behavior in a pipeline?
+
+
+11. What are Labels, Nodes, and Executors in Jenkins?
+
+
+12. What is the basic difference between a Label and a Node?
+
+
+13. What is the purpose of Labels and Nodes?
+
+
+14. In day-to-day activities, what problems have you faced and what Root Cause Analysis (RCA) have you performed?
+
+
+15. When there is a test case failure, how do you debug it? What are the main things you check?
+
+
+16. If a particular host has degraded performance, how do you check and troubleshoot it?
+
+
+17. What kind of activities have you done in SonarQube?
+
+
+18. What are Quality Profiles in SonarQube?
+
+
+19. In Maven, what are transitive dependencies?
+
+
+20. Do you have any questions for me?
 
 
 
