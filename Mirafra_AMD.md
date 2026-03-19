@@ -1057,7 +1057,81 @@ Mirafra - AMD 3rd Round
         
         LOG results
     ```
+```python
+import boto3
+import docker
+from datetime import datetime, timedelta
 
+# ---------------- AWS EC2 CLEANUP ---------------- #
+
+def cleanup_ec2():
+    ec2 = boto3.client('ec2')
+    cloudwatch = boto3.client('cloudwatch')
+
+    # Get all instances with tag Environment=Dev
+    response = ec2.describe_instances(
+        Filters=[
+            {'Name': 'tag:Environment', 'Values': ['Dev']}
+        ]
+    )
+
+    for reservation in response['Reservations']:
+        for instance in reservation['Instances']:
+            instance_id = instance['InstanceId']
+            state = instance['State']['Name']
+
+            if state == 'running':
+                # Check CPU Utilization (last 1 hour average)
+                metrics = cloudwatch.get_metric_statistics(
+                    Namespace='AWS/EC2',
+                    MetricName='CPUUtilization',
+                    Dimensions=[{'Name': 'InstanceId', 'Value': instance_id}],
+                    StartTime=datetime.utcnow() - timedelta(hours=1),
+                    EndTime=datetime.utcnow(),
+                    Period=3600,
+                    Statistics=['Average']
+                )
+
+                datapoints = metrics['Datapoints']
+
+                if datapoints:
+                    avg_cpu = datapoints[0]['Average']
+                    print(f"{instance_id} CPU: {avg_cpu}%")
+
+                    if avg_cpu < 5:
+                        ec2.stop_instances(InstanceIds=[instance_id])
+                        print(f"Stopped idle instance: {instance_id}")
+
+# ---------------- DOCKER CLEANUP ---------------- #
+
+def cleanup_docker():
+    client = docker.from_env()
+    images = client.images.list()
+
+    cutoff_date = datetime.utcnow() - timedelta(days=30)
+
+    for image in images:
+        created = datetime.strptime(image.attrs['Created'][:19], "%Y-%m-%dT%H:%M:%S")
+
+        if created < cutoff_date:
+            try:
+                client.images.remove(image.id, force=True)
+                print(f"Removed old image: {image.id}")
+            except Exception as e:
+                print(f"Error removing image {image.id}: {e}")
+
+# ---------------- MAIN FUNCTION ---------------- #
+
+def cleanup_environment():
+    print("Starting cleanup...")
+    cleanup_ec2()
+    cleanup_docker()
+    print("Cleanup complete.")
+
+# Run script
+if __name__ == "__main__":
+    cleanup_environment()
+```
 * Python COde:
     import boto3
 import docker
