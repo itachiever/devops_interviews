@@ -957,6 +957,7 @@ stage('Parallel Run') {
 
 
 ---
+AMD 3rd Round
 # 5th Round Questions
 ---
 
@@ -971,7 +972,7 @@ Mirafra - AMD 3rd Round
 3. For pipelines, did you use Groovy or any other development language for pipeline development?
 
 
-4. During these 2.5 years, were you deployed at the client location or working from the TCS office?
+4. During these 2.5 years, were you deployed at the client location or working from the current company office?
 
 
 5. Regarding Infrastructure as Code (IaC) like Terraform, did you implement and write the code yourself, or was it already existing?
@@ -1005,9 +1006,74 @@ Mirafra - AMD 3rd Round
 
 
 14. Do you have any questions for me?
+
+
 ---
 # 5th Round Answers
 ---
 
+**1. Self Introduction**
+*   **Answer:** 2.5 Years Experience in DevOps & Cloud. Core skills: Terraform, Docker, AWS, CI/CD. Currently upskilling in Python automation.
+
+**2. You are mostly focused on infrastructure initiatives and not directly on Jenkins pipelines or build-related activities, correct?**
+*   **Answer:** Partially correct. Primary focus is Infrastructure (IaC), but I have experience configuring Jenkins jobs and managing agents. Deep Groovy development is limited.
+
+**3. For pipelines, did you use Groovy or any other development language for pipeline development?**
+*   **Answer:** Used Declarative Pipeline syntax. Comfortable modifying stages and integrating shell scripts. Limited exposure to advanced Groovy/Shared Libraries.
+
+**4. During these 2.5 years, were you deployed at the client location or working from the current company office?**
+*   **Answer:** Worked from the current company office, collaborating closely with client teams via Agile methodologies.
+
+**5. Regarding Infrastructure as Code (IaC) like Terraform, did you implement and write the code yourself, or was it already existing?**
+*   **Answer:** Both.
+    *   **New:** Wrote Terraform modules from scratch (VPC, EC2).
+    *   **Existing:** Refactored and maintained legacy code.
+
+**6. Interviewer mentioned: “I am trying to understand which open position suits you. I see you are more into IaC, Docker, and Git, but I don’t see much development exposure.”**
+*   **Answer:** Agreed with the observation. Highlighted that I am actively learning Python to transition from "Ops" to "DevOps Engineering" and build automation tools.
+
+**7. Can you explain one project where you used Python?**
+*   **Answer:** Automated Cloud Waste Management (Cleanup of unused resources).
+
+**8. Explain the goal or project statement first, and then describe how you solved it.**
+*   **Goal:** Reduce costs by cleaning up idle EC2 instances and old Docker images.
+*   **Solution:** Python script using **Boto3** (AWS) and **Docker SDK**. Scheduled via Cron to stop idle instances and prune images automatically.
+
+**9. Share your screen and write the pseudocode for what you are explaining.**
+*   **Pseudocode:**
+    ```text
+    FUNCTION cleanup_environment():
+        CONNECT to AWS (Boto3) & Docker Client
+        
+        # EC2 Logic
+        GET instances (Tag='Dev')
+        FOR instance in instances:
+            IF state == 'running' AND CPU_Low:
+                STOP instance
+        
+        # Docker Logic
+        GET images older than 30 days
+        REMOVE images
+        
+        LOG results
+    ```
+
+**10. What is your long-term goal? Do you want to be more of a hands-on developer...?**
+*   **Answer:** Goal is to become a **Platform Engineer**. Aspiring to build internal tools, write automations, and bridge the gap between Infrastructure and Development.
+
+**11. So that means you are interested in Python development alongside handling DevOps tasks?**
+*   **Answer:** Yes. I view Python as a force multiplier to automate repetitive DevOps tasks.
+
+**12. Role explanation by interviewer... Question: Which do you prefer – Development or Operations?**
+*   **Answer:** Preference: **Development Role**.
+    *   Reason: Aligns with my upskilling path. I want to move from maintaining systems to building solutions (pipelines, plugins, automations).
+
+**13. You mentioned you don’t have any offer and are ready to join, but your joining date is in October. Why are you taking time?**
+*   **Answer:** Standard Notice Period policy. However, willing to negotiate early release with current employer. Can likely join within **15-20 days** of receiving the offer.
+
+**14. Do you have any questions for me?**
+*   **Answer:**
+    1. What is the current tech stack for internal tools (Python, Go, Java)?
+    2. What does the onboarding process look like for this role?
 
 
