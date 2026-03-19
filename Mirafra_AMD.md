@@ -960,7 +960,51 @@ stage('Parallel Run') {
 # 5th Round Questions
 ---
 
+Mirafra - AMD 3rd Round
 
+1. Self Introduction
+
+
+2. You are mostly focused on infrastructure initiatives and not directly on Jenkins pipelines or build-related activities, correct?
+
+
+3. For pipelines, did you use Groovy or any other development language for pipeline development?
+
+
+4. During these 2.5 years, were you deployed at the client location or working from the TCS office?
+
+
+5. Regarding Infrastructure as Code (IaC) like Terraform, did you implement and write the code yourself, or was it already existing?
+
+
+6. Interviewer mentioned: “I am trying to understand which open position suits you. I see you are more into IaC, Docker, and Git, but I don’t see much development exposure.”
+
+
+7. Can you explain one project where you used Python?
+
+
+8. Explain the goal or project statement first, and then describe how you solved it.
+
+
+9. Share your screen and write the pseudocode for what you are explaining.
+
+
+10. What is your long-term goal? Do you want to be more of a hands-on developer, explore VS Code plugin development, learn Gradle, and other programming languages? What are you aspiring toward?
+
+
+11. So that means you are interested in Python development alongside handling DevOps tasks?
+
+
+12. Role explanation by interviewer:
+  - Development role: Building and understanding real-time complex Groovy pipelines, internal Python automations, creating automations from scratch, possibly writing new VS Code plugins, enhancing existing Gradle plugins, being open to learning quickly.
+  - Operations role: Handling delivery initiatives, debugging build failures, understanding AI-based automation for problem detection, quickly recovering systems from failures.
+  Question: Which do you prefer – Development or Operations?
+
+
+13. You mentioned you don’t have any offer and are ready to join, but your joining date is in October. Why are you taking time? We are looking for someone who can join sooner.
+
+
+14. Do you have any questions for me?
 ---
 # 5th Round Answers
 ---
