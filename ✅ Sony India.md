@@ -26,18 +26,11 @@
 11. Identify opportunities to **improve delivery processes and cloud adoption strategies**.
 12. Stay current with **AWS services and emerging cloud technologies**.
 
-
-
 ------
 
+# Role: DevSecOps | Company: Curatal | Client: Sony India Software Centre Private Limited (SISCPL) | Interview: 1st Round (by Curatal) | Experience: 4 years
 
-# Role: DevSecOps
-# Company: Curatal
-# Client: Sony India Software Centre Private Limited (SISCPL) 
-# Interview: 1st Round (by Curatal)
-# Experience: 4 years
-
-### Question:
+# Interview Question:
 
 1. **Can you give a brief detail about yourself? What kind of roles and responsibilities do you do on a daily basis?**
 
@@ -55,7 +48,6 @@
 
 8. **Do you have anything you want to ask?**
 
----
 
 ### Questions I asked:
 
@@ -64,4 +56,5 @@
 2. **What might be the further process if my profile gets forwarded?**
 
 ---
+
 
