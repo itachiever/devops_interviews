@@ -132,7 +132,7 @@ This role requires strong experience in building secure, high-availability syste
 
 24. **For one application in production, how many servers are typically there?**
 
-25. **How do you perform parallel deployment to 3–4 servers?**
+25. **How do you perform parallel deployment to 3-4 servers?**
 
 26. **Do you have any questions for us?**
 
