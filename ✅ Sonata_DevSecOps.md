@@ -13,8 +13,6 @@ Role: DevSecOps Engineer
 * EKS
 * GitLab security scanning
 
----
-
 ## Requirements
 
 * 2+ years of hands-on experience with cloud platforms (AWS preferred), including IAM, networking, compute, and storage.
@@ -63,4 +61,27 @@ This role combines strong cloud engineering, security, and automation skills to 
 * Identify opportunities to streamline delivery processes and improve cloud adoption strategies.
 
 ---
-# Questions:
+### Role: DevSecOps Engineer | Interview: 1st Round | Company: Sonata Software
+
+# Interview Questions:
+
+
+1. **Can you give a brief introduction about yourself?**
+
+2. **Your company wants to move a batch data processing workflow from on-prem to AWS ensuring daily ingestion, processing, and full traceability. Which AWS services would you choose and how would you architect the solution for reliability and monitoring?**
+
+3. **You need to migrate a legacy web application with a relational database to AWS ensuring high scalability, availability, and minimal downtime. What AWS services and architecture would you use, and how would you plan the migration?**
+
+4. **You are responsible for maintaining multiple CloudFormation stacks with strict compliance and security requirements. How do you ensure that only approved resource configurations are deployed, both initially and during updates?**
+
+5. **A critical production stack managed by CloudFormation contains sensitive resources and strict policies. How do you safely decommission this stack while ensuring compliance, retention requirements, and avoiding data loss or service disruption?**
+
+6. **A development team wants to rapidly deploy new features but is concerned about security risks. As a DevSecOps expert, how would you balance speed with robust security?**
+
+7. **How comfortable are you in Python (including writing scripts for automation)?**
+
+8. **Write a Python script that automatically rotates and archives log files in a specified directory.**
+
+---
+
+
