@@ -1,7 +1,7 @@
 # Job Description: 
 Role: DevSecOps Engineer
 
-## Mandatory Skills
+### Mandatory Skills
 
 * IAM
 * Networking
@@ -13,7 +13,7 @@ Role: DevSecOps Engineer
 * EKS
 * GitLab security scanning
 
-## Requirements
+### Requirements
 
 * 2+ years of hands-on experience with cloud platforms (AWS preferred), including IAM, networking, compute, and storage.
 * 2+ years of experience designing and maintaining CI/CD pipelines in GitLab, including integrating security scanning and pipeline controls.
@@ -31,7 +31,7 @@ Role: DevSecOps Engineer
 * Demonstrated willingness to take accountability and ownership to solve problems.
 
 
-## Nice to Have
+### Nice to Have
 
 * AWS Certified Solutions Architect, Security – Specialty, or Cloud Practitioner certification.
 * Experience with compliance frameworks (SOC 2, ISO 27001, NIST, CIS Benchmarks).
@@ -39,7 +39,7 @@ Role: DevSecOps Engineer
 * Experience supporting production incident response and post-incident analysis.
 
 
-## Roles & Responsibilities
+### Roles & Responsibilities
 
 This role combines strong cloud engineering, security, and automation skills to support modern application platforms. The DevSecOps Engineer partners closely with Cloud Engineering, Application Development, Security, and Architecture teams to enforce security-by-design principles while enabling developer velocity.
 
