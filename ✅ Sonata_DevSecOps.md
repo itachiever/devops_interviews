@@ -29,9 +29,7 @@ Role: DevSecOps Engineer
 * Advanced problem-solving and analytical skills.
 * Demonstrated ability to collaborate across development, security, and infrastructure teams.
 * Demonstrated willingness to take accountability and ownership to solve problems.
-* Must be authorized to work in the United States.
 
----
 
 ## Nice to Have
 
@@ -40,7 +38,6 @@ Role: DevSecOps Engineer
 * Experience with policy-as-code tools (OPA, Sentinel, AWS Config rules).
 * Experience supporting production incident response and post-incident analysis.
 
----
 
 ## Roles & Responsibilities
 
@@ -61,6 +58,7 @@ This role combines strong cloud engineering, security, and automation skills to 
 * Identify opportunities to streamline delivery processes and improve cloud adoption strategies.
 
 ---
+
 ### Role: DevSecOps Engineer | Interview: 1st Round | Company: Sonata Software
 
 # Interview Questions:
