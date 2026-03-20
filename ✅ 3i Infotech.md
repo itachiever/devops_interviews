@@ -7,7 +7,6 @@ We are seeking a highly skilled **Cloud & DevOps Engineer** with 4+ years of exp
 
 This role requires strong experience in building secure, high-availability systems, optimizing deployment processes, and improving operational efficiency through automation.
 
----
 
 ### Key Responsibilities
 
@@ -18,8 +17,6 @@ This role requires strong experience in building secure, high-availability syste
 * Integrate security and quality scanning tools (SonarQube, Fortify, Trivy) within pipelines.
 * Implement blue-green and canary deployment strategies in Kubernetes environments.
 
----
-
 ### Cloud Infrastructure (AWS / GCP)
 
 * Provision and manage cloud infrastructure using Terraform, Ansible, and CloudFormation.
@@ -27,7 +24,6 @@ This role requires strong experience in building secure, high-availability syste
 * Design secure networking architectures (VPC, subnets, security groups, NACLs, VPC peering).
 * Implement cost optimization strategies and resource lifecycle management.
 
----
 
 ### Containerization & Orchestration
 
@@ -36,15 +32,11 @@ This role requires strong experience in building secure, high-availability syste
 * Implement Helm-based application deployments.
 * Ensure high availability and scalability of containerized workloads.
 
----
-
 ### Monitoring & Observability
 
 * Configure and maintain monitoring solutions using Prometheus and Grafana.
 * Implement logging and alerting strategies for production systems.
 * Ensure 99.9% uptime through proactive monitoring and performance optimization.
-
----
 
 ### Security & Compliance
 
@@ -53,7 +45,6 @@ This role requires strong experience in building secure, high-availability syste
 * Ensure secure SSL/TLS configurations and vulnerability scanning.
 * Follow DevSecOps best practices.
 
----
 
 ### System Administration & Scripting
 
@@ -61,7 +52,6 @@ This role requires strong experience in building secure, high-availability syste
 * Develop automation scripts using Python (Boto3), Bash, and Groovy.
 * Optimize database queries and backup strategies.
 
----
 
 ### Required Skills & Qualifications
 
@@ -79,6 +69,7 @@ This role requires strong experience in building secure, high-availability syste
 * Knowledge of DevSecOps practices and security tools.
 
 ---
+
 ### Role: DevOps Engineer | Interview: 1st Round | Company: 3i Infotech | Client: ICICI | Experience: 4 Years
 
 # Interview Questions:
@@ -137,4 +128,5 @@ This role requires strong experience in building secure, high-availability syste
 26. **Do you have any questions for us?**
 
 ---
+
 
