@@ -30,3 +30,7 @@
 23. Does your Terraform infrastructure as code deploy to AWS or Azure?
 24. How do you handle remote state lock issues in Terraform when working with multiple teams across both AWS and Azure?
 
+---
+
+
+
