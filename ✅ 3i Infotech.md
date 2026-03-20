@@ -79,11 +79,7 @@ This role requires strong experience in building secure, high-availability syste
 * Knowledge of DevSecOps practices and security tools.
 
 ---
-# Role: DevOps Engineer
-# Interview: 1st Round
-# Company: 3i Infotech
-# Client: ICICI
-# Experience: 4 Years
+### Role: DevOps Engineer | Interview: 1st Round | Company: 3i Infotech | Client: ICICI | Experience: 4 Years
 
 # Interview Questions:
 
