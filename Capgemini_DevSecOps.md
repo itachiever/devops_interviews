@@ -1,4 +1,4 @@
-### Rols: DevSecOps Enginee | Interview: 1st Round | COmpany: Capgemini
+### Role: DevSecOps Enginee | Interview: 1st Round | Company: Capgemini
 # Interview Questions
 
 1. Give me an introduction about yourself.
