@@ -190,7 +190,7 @@ This role requires strong experience in building secure, high-availability syste
 *   **Answer:** Yes. SSH is the standard connection for Ansible on Linux nodes.
 
 **20. What are your day-to-day activities and who is your client?**
-*   **Answer:** Maintaining CI/CD and Infra. Client: Currently TalaKunchi Networks (Product), previously in previous company.
+*   **Answer:** Maintaining CI/CD and Infra. Client: Current company (Product), previously in previous company.
 
 **21. Is your client from the banking sector or a product-based company?**
 *   **Answer:** Previous work (at previous company) involved banking-grade security for Govt sector. Current role is Product-based.
