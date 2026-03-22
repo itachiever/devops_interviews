@@ -62,7 +62,8 @@
     *   **Stage 1:** Maven task (Build Artifact).
     *   **Stage 2:** SonarQubePrepare & Analyze task (Test).
     *   **Stage 3:** Deployment job on Self-Hosted Pool.
-"YAML structure would look like this:
+
+* "YAML structure would look like this:
 
 ```yaml
 trigger:
