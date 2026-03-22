@@ -62,8 +62,10 @@
     *   **Stage 1:** Maven task (Build Artifact).
     *   **Stage 2:** SonarQubePrepare & Analyze task (Test).
     *   **Stage 3:** Deployment job on Self-Hosted Pool.
-   '''
-    trigger:
+"YAML structure would look like this:
+
+```yaml
+trigger:
 - main
 
 pool:
@@ -98,7 +100,8 @@ stages:
         deploy:
           steps:
           - script: echo "Deploying artifact..."
-   '''
+```
+
 **9. Best practice for tagging Docker images?**
 *   **Answer:** Use **Immutable Tags** like **Git Commit SHA** or **Build ID**. Avoid `latest` tag for production traceability.
 
@@ -151,5 +154,3 @@ stages:
 *   **Answer:** Backend handles locking automatically.
 *   **AWS:** DynamoDB. **Azure:** Blob Lease.
 *   Manual release: `terraform force-unlock` if needed.
-
-
