@@ -62,7 +62,43 @@
     *   **Stage 1:** Maven task (Build Artifact).
     *   **Stage 2:** SonarQubePrepare & Analyze task (Test).
     *   **Stage 3:** Deployment job on Self-Hosted Pool.
+   '''
+    trigger:
+- main
 
+pool:
+  name: 'MySelfHostedPool'  # Self-hosted agent pool
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildApp
+    steps:
+    - task: Maven@3
+      inputs:
+        goals: 'package'
+    - publishArtifact: 'drop'
+
+- stage: Test
+  jobs:
+  - job: SonarScan
+    steps:
+    - task: SonarQubePrepare@5
+      inputs:
+        SonarQube: 'SonarService'
+        scannerMode: 'CLI'
+    - task: SonarQubeAnalyze@5
+
+- stage: Deploy
+  jobs:
+  - deployment: DeployWeb
+    environment: 'Production'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "Deploying artifact..."
+   '''
 **9. Best practice for tagging Docker images?**
 *   **Answer:** Use **Immutable Tags** like **Git Commit SHA** or **Build ID**. Avoid `latest` tag for production traceability.
 
