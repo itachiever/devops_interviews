@@ -1,7 +1,5 @@
  # Questions:
 
----
-
 1. Can you explain your profile, your work, skill set, and projects?
 2. Where are you currently based / which part of India are you from?
 3. Why are you looking for a job change?
