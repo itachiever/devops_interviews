@@ -123,17 +123,152 @@
 **Pseudocode:**
 ```python
 import boto3
+from datetime import datetime, timedelta
 
-def cleanup_idle_instances():
-    client = boto3.client('ec2')
-    # Describe instances
-    instances = client.describe_instances(Filters=[{'Name': 'tag:Env', 'Values': ['Dev']}])
-    
-    for instance in instances:
-        # Check metrics logic here
-        if is_idle(instance.id):
-            client.stop_instances(InstanceIds=[instance.id])
-            print(f"Stopped instance: {instance.id}")
+# -------------------------------
+# STEP 1: Create AWS clients
+# -------------------------------
+# EC2 client -> to manage instances
+# CloudWatch client -> to read CPU usage
+ec2 = boto3.client('ec2')
+cloudwatch = boto3.client('cloudwatch')
+
+
+# -------------------------------
+# STEP 2: Configuration (easy to change)
+# -------------------------------
+TAG_KEY = 'Environment'      # Tag name
+TAG_VALUE = 'Dev'            # Tag value
+CPU_THRESHOLD = 5.0          # If CPU < 5%, we stop instance
+TIME_WINDOW = 60             # Check last 60 minutes
+
+
+# -------------------------------
+# STEP 3: Get all running instances with given tag
+# -------------------------------
+def get_instances():
+    """
+    This function fetches EC2 instances
+    which have tag Environment=Dev and are running
+    """
+
+    response = ec2.describe_instances(
+        Filters=[
+            # Filter by tag
+            {
+                'Name': f'tag:{TAG_KEY}',
+                'Values': [TAG_VALUE]
+            },
+            # Only running instances
+            {
+                'Name': 'instance-state-name',
+                'Values': ['running']
+            }
+        ]
+    )
+
+    instance_ids = []
+
+    # Loop through response and collect instance IDs
+    for reservation in response['Reservations']:
+        for instance in reservation['Instances']:
+            instance_ids.append(instance['InstanceId'])
+
+    return instance_ids
+
+
+# -------------------------------
+# STEP 4: Get average CPU usage
+# -------------------------------
+def get_cpu(instance_id):
+    """
+    This function gets average CPU usage
+    for the last 1 hour
+    """
+
+    end_time = datetime.utcnow()
+    start_time = end_time - timedelta(minutes=TIME_WINDOW)
+
+    response = cloudwatch.get_metric_statistics(
+        Namespace='AWS/EC2',
+        MetricName='CPUUtilization',
+        Dimensions=[
+            {'Name': 'InstanceId', 'Value': instance_id}
+        ],
+        StartTime=start_time,
+        EndTime=end_time,
+        Period=300,  # data every 5 minutes
+        Statistics=['Average']
+    )
+
+    datapoints = response['Datapoints']
+
+    # If no data found, return None
+    if not datapoints:
+        return None
+
+    # Calculate average CPU from all datapoints
+    total = 0
+    for point in datapoints:
+        total += point['Average']
+
+    avg_cpu = total / len(datapoints)
+
+    return avg_cpu
+
+
+# -------------------------------
+# STEP 5: Stop idle instances
+# -------------------------------
+def stop_idle_instances(instances):
+    """
+    This function checks CPU and stops idle instances
+    """
+
+    for instance_id in instances:
+
+        cpu = get_cpu(instance_id)
+
+        # If no CPU data, skip
+        if cpu is None:
+            print(f"No CPU data for {instance_id}")
+            continue
+
+        print(f"Instance {instance_id} CPU = {cpu:.2f}%")
+
+        # If CPU is less than threshold → stop instance
+        if cpu < CPU_THRESHOLD:
+            print(f"Stopping instance {instance_id} (idle)")
+            ec2.stop_instances(InstanceIds=[instance_id])
+        else:
+            print(f"Instance {instance_id} is active, skipping")
+
+
+# -------------------------------
+# STEP 6: Main function
+# -------------------------------
+def main():
+    print("Finding EC2 instances...")
+
+    instances = get_instances()
+
+    # If no instances found
+    if not instances:
+        print("No instances found")
+        return
+
+    print("Instances found:", instances)
+
+    print("Checking CPU usage...")
+
+    stop_idle_instances(instances)
+
+
+# -------------------------------
+# Run the script
+# -------------------------------
+if __name__ == "__main__":
+    main()
 ```
 
 ### **6. What kind of challenges have you seen in your career till date?**
