@@ -163,9 +163,7 @@ def cleanup_idle_instances():
 
 ---
 
-### **On-Screen Q&A for Recording (Short Form)**
-
-Here are the short points to display on your screen while you speak:
+### Short Q&A:
 
 **1. Brief detail about yourself & daily activities?**
 *   **Intro:** 4+ Years Exp. TCS -> TalaKunchi Networks.
