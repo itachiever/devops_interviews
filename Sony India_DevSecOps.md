@@ -166,7 +166,7 @@ def cleanup_idle_instances():
 ### Short Q&A:
 
 **1. Brief detail about yourself & daily activities?**
-*   **Intro:** 4+ Years Exp. TCS -> TalaKunchi Networks.
+*   **Intro:** 4+ Years Exp.
 *   **Daily:** CI/CD Pipelines, Security Integration (Fortify/Sonar), K8s Management, Automation.
 
 **2. Which cloud platforms & services used?**
