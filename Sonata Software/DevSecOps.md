@@ -81,5 +81,7 @@ This role combines strong cloud engineering, security, and automation skills to 
 8. **Write a Python script that automatically rotates and archives log files in a specified directory.**
 
 ---
+# Answers:
+
 
 
