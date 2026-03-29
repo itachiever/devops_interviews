@@ -201,8 +201,7 @@ This approach shifts security from being a 'blocker' to being an 'enabler'—we 
 **Answer:**
 "Here is a script that automates log rotation. It identifies log files, compresses them into a `.tar.gz` archive to save space, and includes a cleanup mechanism to remove archives older than a specified retention period."
 
-```
-import os
+```import os
 import tarfile
 from datetime import datetime, timedelta
 
