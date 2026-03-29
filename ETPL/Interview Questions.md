@@ -43,7 +43,7 @@
 2. **Where are you currently based? / Which part of India are you from?**
 3. **Why are you looking for a job change?**
 
----
+
 
 ### 🔹 Experience Depth
 
@@ -52,7 +52,6 @@
 6. **Who do you report to?**
 7. **Which client are you working for?**
 
----
 
 ### 🔹 Architecture & System Design
 
@@ -60,7 +59,6 @@
 9. **Is it monolithic or microservices? What kind of system is it?**
 10. **How many services are there?**
 
----
 
 ## 🔹 Kubernetes / DevOps Concepts
 
@@ -70,71 +68,60 @@
 14. **Are you using VPN or jump server? How does access work?**
 15. **Where do you store container images?**
 
----
-
 ### 🔹 Kubernetes Troubleshooting
 
 16. **Have you heard of CrashLoopBackOff?**
 17. **How do you debug a pod that is repeatedly restarting?**
 
----
 
 ### 🔹 Kubernetes Basics
 
 18. **What is ClusterIP and NodePort? (difference expected)**
 19. **What are Pods, Deployments, and Services?**
 
----
 
 ### 🔹 CI/CD & Deployment
 
 20. **How do you perform deployments? (process, initiation, closure)**
 21. **What do you do if deployment fails?**
 22. **What is your rollback strategy? How do you revert to previous deployment?**
----
+
 ### 🔹 Advanced Scenario (IMPORTANT)
 
 23. **If deployment includes DB changes (columns added/deleted), how do you rollback?**
 24. **You can use Liquibase, but in your case what process do you follow?**
 25. **Which database are you using?**
 
----
 
 ### 🔹 AI Usage
 
 26. **How are you using AI in your systems or day-to-day work?**
 
----
 
 ### 🔹 Behavioral
 
 27. **What is your biggest achievement in your career?**
 
----
 
 ### 🔹 Troubleshooting Scenario
 
 28. **If a server is going down intermittently and hanging, how will you handle it?**
 
----
 
 ### 🔹 Tools Exposure
 
 29. **Do you have experience with APM tools like New Relic or Datadog?**
 
----
 
 ### 🔹 Security
 
 30. **How do you manage secrets?**
 
----
 
 ### 🔹 Closing
 
 31. **Do you have any questions for me?**
 
----
 
 ---
 
