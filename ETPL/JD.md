@@ -4,14 +4,14 @@
 **Experience:** 3–6 years  
 **Employment Type:** Full-time  
 
----
 
-## Role Overview
+
+### Role Overview
 Seeking a hands-on Senior DevOps Engineer to design, operate, and improve cloud infrastructure and CI/CD pipelines. The role focuses on reliability, scalability, automation, and high availability across development and production environments.
 
----
 
-## Key Responsibilities
+
+### Key Responsibilities
 
 - Manage and maintain cloud infrastructure on AWS and Azure
 - Perform Linux system administration and troubleshoot system/application issues
@@ -26,18 +26,15 @@ Seeking a hands-on Senior DevOps Engineer to design, operate, and improve cloud 
 - Implement backup, recovery, and disaster recovery strategies
 - Maintain technical documentation and operational best practices
 
----
 
-## Required Experience
+### Required Experience
 
 - 3–6 years in DevOps / Infrastructure / Platform Engineering
 - Strong Linux administration and shell scripting experience
 - Hands-on experience with AWS and/or Azure
 - Experience with production-grade, high-availability systems
 
----
-
-## Technical Skills
+### Technical Skills
 
 - CI/CD: Jenkins (or equivalent)
 - Containers: Docker
@@ -47,15 +44,13 @@ Seeking a hands-on Senior DevOps Engineer to design, operate, and improve cloud 
 - System Design: High availability, scalability, fault tolerance
 - Monitoring: Observability tools (e.g., Prometheus, Grafana, etc.)
 
----
 
-## Nice to Have
+### Nice to Have
 
 - Azure DevOps pipelines experience or certification
 - Messaging systems: Kafka, RabbitMQ
 - Microservices architecture understanding
 
----
 
 ## Soft Skills
 
