@@ -201,75 +201,79 @@ This approach shifts security from being a 'blocker' to being an 'enabler'—we 
 **Answer:**
 "Here is a script that automates log rotation. It identifies log files, compresses them into a `.tar.gz` archive to save space, and includes a cleanup mechanism to remove archives older than a specified retention period."
 
-```python
+```
 import os
-import gzip
-import shutil
 import tarfile
-import datetime
-from pathlib import Path
+from datetime import datetime, timedelta
 
-def rotate_logs(log_dir, archive_dir, retention_days=30):
-    """
-    Rotates log files by compressing them into archives and deleting old archives.
-    
-    :param log_dir: Directory containing active log files.
-    :param archive_dir: Directory to store compressed archives.
-    :param retention_days: Days to keep archives before deletion.
-    """
-    log_path = Path(log_dir)
-    archive_path = Path(archive_dir)
-    
-    # Create archive directory if it doesn't exist
-    archive_path.mkdir(parents=True, exist_ok=True)
-    
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    
-    print(f"Starting log rotation for directory: {log_dir}")
-    
-    # 1. Identify and compress log files
-    # Assuming logs end with .log - adjust pattern as needed
-    for log_file in log_path.glob("*.log"):
-        try:
-            # Define archive name
-            archive_name = f"{log_file.stem}_{timestamp}.tar.gz"
-            full_archive_path = archive_path / archive_name
-            
-            print(f"Archiving {log_file.name} -> {archive_name}")
-            
-            # Compress file into a tar.gz archive
-            with tarfile.open(full_archive_path, "w:gz") as tar:
-                tar.add(log_file, arcname=log_file.name)
-            
-            # 2. Clear or Remove original log file
-            # Option A: Remove the file completely
-            # os.remove(log_file) 
-            
-            # Option B: Truncate the file (keep file empty, useful for running processes)
-            with open(log_file, 'w') as f:
-                f.truncate(0)
-                
-        except Exception as e:
-            print(f"Error processing {log_file.name}: {e}")
+# -------------------------------
+# SETTINGS (change these paths)
+# -------------------------------
+LOG_FOLDER = "/var/log/myapp"
+ARCHIVE_FOLDER = "/var/log/myapp/archive"
+RETENTION_DAYS = 30
 
-    # 3. Cleanup old archives (Retention Policy)
-    print(f"Cleaning up archives older than {retention_days} days...")
-    cutoff_date = datetime.datetime.now() - datetime.timedelta(days=retention_days)
-    
-    for archive in archive_path.glob("*.tar.gz"):
-        if datetime.datetime.fromtimestamp(archive.stat().st_mtime) < cutoff_date:
-            print(f"Deleting old archive: {archive.name}")
-            os.remove(archive)
 
-    print("Log rotation completed successfully.")
+# -------------------------------
+# STEP 1: Create archive folder if not exists
+# -------------------------------
+if not os.path.exists(ARCHIVE_FOLDER):
+    os.makedirs(ARCHIVE_FOLDER)
 
-# Example Usage
-if __name__ == "__main__":
-    # Define your paths here
-    LOG_DIRECTORY = "/var/log/myapp"
-    ARCHIVE_DIRECTORY = "/var/log/myapp/archive"
-    
-    rotate_logs(LOG_DIRECTORY, ARCHIVE_DIRECTORY, retention_days=30)
+print("Starting log rotation...\n")
+
+# Current time (used to make unique archive names)
+current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+
+# -------------------------------
+# STEP 2: Find all .log files
+# -------------------------------
+for file in os.listdir(LOG_FOLDER):
+
+    # Process only .log files
+    if file.endswith(".log"):
+        log_file_path = os.path.join(LOG_FOLDER, file)
+
+        # Create archive file name
+        archive_name = file + "_" + current_time + ".tar.gz"
+        archive_path = os.path.join(ARCHIVE_FOLDER, archive_name)
+
+        print("Archiving:", file)
+
+        # -------------------------------
+        # STEP 3: Compress log file
+        # -------------------------------
+        with tarfile.open(archive_path, "w:gz") as tar:
+            tar.add(log_file_path, arcname=file)
+
+        # -------------------------------
+        # STEP 4: Empty the log file
+        # (so app can keep writing logs)
+        # -------------------------------
+        open(log_file_path, "w").close()
+
+
+# -------------------------------
+# STEP 5: Delete old archives
+# -------------------------------
+print("\nDeleting old archive files...")
+
+cutoff_date = datetime.now() - timedelta(days=RETENTION_DAYS)
+
+for file in os.listdir(ARCHIVE_FOLDER):
+    if file.endswith(".tar.gz"):
+        file_path = os.path.join(ARCHIVE_FOLDER, file)
+
+        # Get last modified time
+        file_time = datetime.fromtimestamp(os.path.getmtime(file_path))
+
+        # Delete if older than retention period
+        if file_time < cutoff_date:
+            print("Deleting:", file)
+            os.remove(file_path)
+
+print("\nLog rotation completed!")
 ```
 
 
