@@ -138,7 +138,7 @@
 *   **Open to:** Relocation / Hybrid models.
 
 **3. Why are you looking for a job change?**
-*   **Current Status:** Successfully built stable infrastructure.
+*   **Current Status:** Successfully built stable process of DevSecOps.
 *   **Goal:** Seeking complex challenges at scale.
 *   **Focus:** High-availability systems & Advanced Cloud Architecture.
 
