@@ -38,7 +38,7 @@
 
 19. **Do you have anything to ask me before I discuss internally with management and the CTO?**
 
----
+
 
 ### Core Technical Questions Asked
 
@@ -57,7 +57,7 @@
 13. Secret Management without third-party tools.
 
 
----
+
 
 # Answers
 
@@ -74,7 +74,7 @@ Currently, I am working as a DevSecOps Engineer at PRESENT COMPANY, supporting a
 
 My primary tools include Jenkins, GitLab, Kubernetes, Docker, Fortify, SonarQube, Snyk, Trivy, GitLeaks, Terraform, Ansible, and AWS."
 
----
+
 
 # 2. Do you have experience with Snyk?
 
@@ -86,7 +86,7 @@ I have used Snyk primarily for Software Composition Analysis (SCA), container im
 
 We integrated Snyk into CI/CD pipelines to automatically identify vulnerable open-source dependencies and container vulnerabilities. Based on organizational policies, critical and high-risk findings were either blocked through security gates or tracked through remediation workflows."
 
----
+
 
 # 3. What is Policy as Code?
 
@@ -104,7 +104,7 @@ For example:
 
 Common tools include OPA Gatekeeper, Kyverno, HashiCorp Sentinel, and AWS Organizations SCPs."
 
----
+
 
 # 4. Why do we use Policy as Code?
 
@@ -122,7 +122,7 @@ Benefits include:
 
 It helps organizations implement security controls automatically during development, deployment, and runtime."
 
----
+
 
 # 5. Have you worked on Security Gating?
 
@@ -134,7 +134,7 @@ I have implemented security gates within CI/CD pipelines using tools such as For
 
 Security gates automatically evaluate scan results and determine whether the build should proceed or fail based on predefined organizational security policies."
 
----
+
 
 # 6. What logic do you use while creating Security Gates?
 
@@ -158,7 +158,7 @@ Typically:
 
 The goal is to prevent significant security risks from reaching production while maintaining delivery velocity."
 
----
+
 
 # 7. What if a developer resists fixing vulnerabilities?
 
@@ -172,7 +172,7 @@ If the issue is genuinely low risk, a formal risk acceptance process can be foll
 
 For high-risk vulnerabilities, we typically require remediation before deployment. For lower-risk findings, we may allow deployment with documented exceptions and defined remediation timelines."
 
----
+
 
 # 8. How do you balance Security vs Developer Productivity?
 
@@ -192,7 +192,7 @@ Typically:
 
 This ensures security improves without negatively impacting delivery timelines."
 
----
+
 
 # 9. How do you secure an EKS Architecture?
 
@@ -216,7 +216,7 @@ Key controls include:
 
 This ensures security across identity, networking, workloads, and data protection."
 
----
+
 
 # 10. Do you know RBAC?
 
@@ -230,7 +230,7 @@ It restricts access based on user roles and responsibilities.
 
 Instead of granting permissions directly to users, permissions are assigned to roles, and users inherit permissions through role assignments."
 
----
+
 
 # 11. How do you implement RBAC?
 
@@ -245,7 +245,7 @@ Instead of granting permissions directly to users, permissions are assigned to r
 
 Users authenticate through SSO or IAM integration and are granted only the permissions required for their responsibilities following the principle of least privilege."
 
----
+
 
 # 12. What is Secret Management?
 
@@ -261,7 +261,7 @@ Users authenticate through SSO or IAM integration and are granted only the permi
 
 The goal is to prevent exposure while ensuring authorized applications can securely retrieve required secrets."
 
----
+
 
 # 13. How do you manage secrets without third-party tools?
 
@@ -281,7 +281,7 @@ Examples include:
 
 Additionally, secret scanning tools like GitLeaks can be integrated to prevent accidental credential exposure."
 
----
+
 
 # 14. Where are you working currently?
 
@@ -289,7 +289,7 @@ Additionally, secret scanning tools like GitLeaks can be integrated to prevent a
 
 "Currently, I am working as a DevSecOps Engineer at PRESENT COMPANY in Mumbai, supporting a fintech client in the payment gateway domain."
 
----
+
 
 # 15. Are you comfortable relocating to Bangalore?
 
@@ -299,7 +299,7 @@ Additionally, secret scanning tools like GitLeaks can be integrated to prevent a
 
 I previously worked in Bangalore during my tenure with LAST COMPANY and am comfortable relocating if required."
 
----
+
 
 # 16. What is your Notice Period?
 
@@ -307,7 +307,7 @@ I previously worked in Bangalore during my tenure with LAST COMPANY and am comfo
 
 "My official notice period is 90 days. However, based on previous discussions and organizational practices, early release may be possible depending on project transition requirements."
 
----
+
 
 # 17. What is your Current Salary?
 
@@ -315,7 +315,7 @@ I previously worked in Bangalore during my tenure with LAST COMPANY and am comfo
 
 "My current CTC is MENTION CURRENT CTC in LPA."
 
----
+
 
 # 18. What are your Salary Expectations?
 
@@ -323,7 +323,7 @@ I previously worked in Bangalore during my tenure with LAST COMPANY and am comfo
 
 "Based on my experience in DevOps, DevSecOps, cloud security, CI/CD security, Kubernetes security, and compliance-related implementations, I am expecting around EXPECTED CTC in LPA. However, I am open to discussing the overall compensation structure."
 
----
+
 
 # 19. Do you have any questions for us?
 
