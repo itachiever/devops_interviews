@@ -1,4 +1,4 @@
-COmpany: Sagent
+Company: Sagent
 
 Position: DevOps Engineer SR - 2028
 
