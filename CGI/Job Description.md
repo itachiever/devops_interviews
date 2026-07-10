@@ -1,6 +1,5 @@
 ## Role: DevSecOps
-## Location
-**Bangalore**
+**Location : Bangalore**
 
 ## Skills
 
