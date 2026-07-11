@@ -1,6 +1,6 @@
 # devops_interviews
 
-In this repository i will share all my interviews i attended along with Job description and questions i was faced and alos the answers.
+In this repository i will share all my interviews i attended along with Job description and questions i was faced and also the answers.
 
 The interviews are mostly of roles:
 -  DevOps Engineer
