@@ -3,12 +3,12 @@
 
 ## Skills
 
-- ✔ Strong Python developer
-- ✔ CI/CD Pipeline Integration, Jenkins, and experience on cloud platforms (Azure)
-- ✔ Understanding of SDLC
-- ✔ Exposure to compliance standards (ISO / PCI / GDPR)
-- ✔ Ability to build tools and dashboards
-- ✔ Good communication skills (training teams)
+- Strong Python developer
+- CI/CD Pipeline Integration, Jenkins, and experience on cloud platforms (Azure)
+- Understanding of SDLC
+- Exposure to compliance standards (ISO / PCI / GDPR)
+- Ability to build tools and dashboards
+- Good communication skills (training teams)
 
 ## Key Responsibilities
 
