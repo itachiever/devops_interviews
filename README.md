@@ -6,9 +6,11 @@ The interviews are primarily for the following roles:
 
 * DevOps Engineer
 * DevSecOps Engineer
+* Security Engineer
+* DevOps Engineer with Python
 * SecOps Engineer
 * Cloud Engineer
-* Security Engineer
+* Cloud Infra Engineer
 * Cloud Security Engineer
 * Application Security Engineer
 * Integration Engineer
