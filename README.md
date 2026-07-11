@@ -6,6 +6,7 @@ The interviews are primarily for the following roles:
 
 * DevOps Engineer
 * DevSecOps Engineer
+* SecOps Engineer
 * Cloud Engineer
 * Security Engineer
 * Cloud Security Engineer
