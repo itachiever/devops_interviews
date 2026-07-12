@@ -38,6 +38,8 @@
 33. How would you handle a false positive reported by a security scanner?
 34. Explain your experience using real-world, scenario-based DevSecOps examples.
 
+---
+
 ### Interview Areas Covered
 
 * General Experience
