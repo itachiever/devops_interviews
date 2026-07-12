@@ -231,6 +231,15 @@ How would you handle false positives from a security scanner? (suggested prepara
 
 * “I have not used them extensively in production. My experience has primarily been with **Grafana** for operational dashboards. However, I understand the concepts and am confident in learning them quickly because of my experience with observability and data visualization.”
 
+Explanation:
+* **Power BI** is a **business intelligence and data visualization platform**. It connects to various data sources, lets you transform and model the data, and create **interactive dashboards and reports** for business and operational insights.
+
+* **Microsoft Fabric** is a **unified analytics platform** that brings together **data engineering, data integration, data warehousing, data science, real-time analytics, and Power BI** into a single SaaS offering. It is built around the concept of **OneLake**, a centralized data lake for the organization.
+
+For an interview, you can summarize:
+
+> “Power BI focuses on **visualization and reporting**, while Microsoft Fabric provides the **end-to-end data platform**—from data ingestion and processing to analytics and dashboards.”
+
 19. **What is the Secure SDLC and its phases?**
 
 * The phases are **Requirements**, **Design**, **Development**, **Testing**, **Deployment**, and **Operations/Maintenance**.
