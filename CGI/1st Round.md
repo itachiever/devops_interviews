@@ -82,7 +82,7 @@
 
 ---
 
-## Actual Questions:
+## Actual Questions: Removed small/Follow-up questions
 
 1. Tell me about your background and DevSecOps experience. 
 2. How do you design a secure CI/CD pipeline? 
@@ -109,7 +109,7 @@
 23. Which Python libraries have you used? 
 How would you handle false positives from a security scanner? (suggested preparation topic for the next round)
 
-## Answers:
+## Answers: 
 
 1. **Tell me about your background and DevSecOps experience.**
 
