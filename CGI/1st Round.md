@@ -82,7 +82,7 @@
 
 ---
 
-Actual Questions:
+## Actual Questions:
 
 1. Tell me about your background and DevSecOps experience. 
 2. How do you design a secure CI/CD pipeline? 
@@ -109,7 +109,7 @@ Actual Questions:
 23. Which Python libraries have you used? 
 How would you handle false positives from a security scanner? (suggested preparation topic for the next round)
 
-Answers:
+## Answers:
 
 1. **Tell me about your background and DevSecOps experience.**
 
@@ -192,4 +192,75 @@ Answers:
     * Use a **remote, encrypted backend** with state locking and restrict access to the state file.
     * Only approved, scanned changes are allowed to reach production.
 
-These are the kinds of structured, experience-backed answers a strong **4–5 YOE DevSecOps engineer** would typically give in an interview.
+13. **What is the difference between Terraform and Helm?**
+
+* **Terraform** is an **Infrastructure as Code** tool used to provision cloud resources such as VNets, AKS clusters, VMs, and databases.
+* **Helm** is a **package manager for Kubernetes** used to deploy and manage applications within a cluster.
+* In practice, I use **Terraform to build the platform** and **Helm to deploy workloads** on that platform.
+
+14. **How do you monitor a production environment?**
+
+* We collect **metrics** with **Prometheus** and visualize them in **Grafana**.
+* Logs are centralized in **ELK** and **Azure Monitor** for troubleshooting and auditing.
+* We configure alerts for **latency, error rates, resource usage, and pod restarts**.
+* The key is to combine **metrics, logs, traces, and alerting** to achieve full observability.
+
+15. **What are SLA, SLO, and SLI?**
+
+* **SLI** is the actual measurement, such as API availability.
+* **SLO** is the target, for example **99.9% uptime**.
+* **SLA** is the contractual commitment to the customer, often including penalties if not met.
+* In short: **SLIs are measured, SLOs are goals, and SLAs are promises**.
+
+16. **Describe a major production incident you handled using the STAR method.**
+
+* **Situation:** After a production deployment, users experienced intermittent **HTTP 500 errors**.
+* **Task:** I was responsible for restoring service and identifying the root cause.
+* **Action:** I analyzed **Grafana metrics** and **ELK logs**, identified an incorrect configuration affecting database connectivity, rolled back via the Jenkins pipeline, fixed the configuration, and added an automated validation step.
+* **Result:** Service was restored within minutes, and the new validation check prevented recurrence.
+
+17. **Where have you used Python in DevSecOps?**
+
+* I have used Python for **vulnerability aggregation**, combining findings from multiple scanners into a single report.
+* I have written scripts for **log parsing**, API integrations with Jenkins, and generating operational reports.
+* These automations reduced manual effort and improved response times.
+
+18. **Do you have experience with Microsoft Fabric or Power BI?**
+
+* “I have not used them extensively in production. My experience has primarily been with **Grafana** for operational dashboards. However, I understand the concepts and am confident in learning them quickly because of my experience with observability and data visualization.”
+
+19. **What is the Secure SDLC and its phases?**
+
+* The phases are **Requirements**, **Design**, **Development**, **Testing**, **Deployment**, and **Operations/Maintenance**.
+* Security activities such as **threat modeling, code reviews, and security testing** are embedded throughout the lifecycle.
+
+20. **How would you improve Secure SDLC adoption across engineering teams?**
+
+* Establish **security champions**.
+* Provide **developer training** and clear **secure coding standards**.
+* Automate security checks in CI/CD and enforce policies through pipelines.
+* Use **dashboards and metrics** to track progress and conduct regular **threat-modeling workshops**.
+
+21. **What is threat modeling?**
+
+* Threat modeling is the structured process of identifying **assets, threats, attack paths, and mitigations** during the design phase.
+* It helps us address risks before implementation begins.
+
+22. **Which threat-modeling frameworks have you used?**
+
+* I am familiar with **STRIDE**, which categorizes threats into **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege**.
+* I have used it during design discussions to ensure we systematically consider security risks.
+
+23. **Which Python libraries have you used?**
+
+* **`requests`** for REST APIs.
+* **`json`** and **`PyYAML`** for configuration processing.
+* **`logging`** for application logs.
+* **`re`** for parsing logs and extracting patterns.
+* **`subprocess`** for invoking CLI tools from scripts.
+
+24. **How would you handle false positives from a security scanner?**
+
+* First, I would **validate the finding manually** to confirm whether it is exploitable.
+* If it is a false positive, I would document the analysis, suppress or tune the rule with proper approval, and track it in the vulnerability management process.
+* The objective is to maintain **developer trust in the tools** while ensuring that genuine risks are never overlooked.
