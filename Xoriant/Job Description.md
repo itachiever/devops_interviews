@@ -10,7 +10,6 @@ We are looking for a DevOps Engineer to help us build functional systems that im
 **Job Type:** Full time  
 **Work Type:** Hybrid
 
----
 
 ## Impact you will realize: Job Responsibilities
 
@@ -22,7 +21,6 @@ A candidate with these skills will have a significant impact on software deliver
 - Their focus on performance optimization and troubleshooting across environments improves application reliability.
 - By collaborating across teams and providing technical support, they foster a culture of continuous improvement and drive long-term system scalability and security.
 
----
 
 ## Key skills you will require
 
@@ -42,7 +40,6 @@ A candidate with these skills will have a significant impact on software deliver
 - Document and design various processes; update existing processes.
 - Provide technical support and guidance to team members.
 
----
 
 ## Qualification you must require
 
