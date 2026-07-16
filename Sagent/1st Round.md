@@ -94,9 +94,9 @@
 
 ### Answer:
 
-Hi, I'm **Yuvaraju**, a **DevSecOps Engineer** with **4+ years of experience** in DevOps, DevSecOps, cloud infrastructure, and CI/CD automation.
+Hi, I'm **YOUR NAME**, a **DevSecOps Engineer** with **4+ years of experience** in DevOps, DevSecOps, cloud infrastructure, and CI/CD automation.
 
-Currently, I'm working at **Talakunchi Networks**, deployed to a **fintech client (InSolutions Global)** that provides payment solutions to major banks.
+Currently, I'm working at **CURRENT COMPANY NAME**, deployed to a **fintech client (CLIENT NAME)** that provides payment solutions to major banks.
 
 My responsibilities include:
 
