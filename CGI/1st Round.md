@@ -115,7 +115,7 @@ How would you handle false positives from a security scanner? (suggested prepara
 
 1. **Tell me about your background and DevSecOps experience.**
 
-   * “I have **4.5 years of experience** in **DevOps and DevSecOps**. I started my career at **TCS**, where I worked on CI/CD, containerization, Terraform-based infrastructure automation, and production support.
+   * “I have **4.5 years of experience** in **DevOps and DevSecOps**. I started my career at **FIRST COMPANY NAME**, where I worked on CI/CD, containerization, Terraform-based infrastructure automation, and production support.
    * In my current role, I work for a **fintech client** in the payment domain. My primary responsibility is to **embed security throughout the SDLC**.
    * I have designed and maintained **Jenkins pipelines**, integrated **Fortify, Snyk, Dependency-Check, and GitLeaks**, and automated deployments to **AKS** using **Terraform** and **Helm**.
    * I also work closely with developers to **triage vulnerabilities, drive remediation, and improve secure development practices**.”
