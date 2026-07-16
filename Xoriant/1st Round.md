@@ -36,51 +36,12 @@
 34. Will you write a **function** for that?
 35. How will you **call/execute** that function in Python?
 
-    
-
-1. Difference between **Declarative** and **Scripted Jenkins Pipelines**.
-2. Which Jenkins Pipeline are you currently using?
-3. How are you handling **zero downtime deployments** in Kubernetes?
-4. Can you explain **Rolling Updates**?
-5. Can you explain **Readiness Probe**?
-6. Can you explain **Liveness Probe**?
-7. Have you solved any production problem related to rolling updates or probes?
-8. What is your approach towards **Resource Requests** and **Resource Limits**?
-9. What is your approach towards **Horizontal Pod Autoscaler (HPA)**?
-10. What is your approach towards **Vertical Pod Autoscaler (VPA)**?
-11. When do you use **HPA** and when do you use **VPA**?
-12. What exactly is **Configuration Drift**?
-13. How did **Terraform** help you in fixing Configuration Drift?
-14. Do you have experience writing **Terraform Modules**?
-15. If you want to create an **AWS VPC using Terraform**, what are the key things you will mention in that module?
-16. What exactly is **Ingress**?
-17. What exactly is a **Load Balancer**?
-18. What is the difference between **Ingress** and **Load Balancer**?
-19. You mentioned **Trivy**, **Snyk**, and **GitLeaks**. What exactly do they detect?
-20. What is your approach towards **Cloud Cost Optimization**?
-21. You know about the **ELK Stack**, right?
-22. How are you handling **log retention** at a large scale?
-23. How do you handle **large log volumes**?
-24. What is **Kafka**?
-25. What is **RabbitMQ**?
-26. What is the difference between **Kafka** and **RabbitMQ**?
-27. How good are you in **Linux troubleshooting**?
-28. Suppose an application is not accessible via the browser and only a few users are affected. How will you investigate it?
-29. Which **Linux commands** will you use for troubleshooting?
-30. Can you explain one **Linux troubleshooting task** you handled?
-31. Were you involved in finding the **root cause** of production issues?
-32. What **production issue** did you handle recently?
-33. Which **programming language** are you good at?
-34. You said you're good at **Python**. Can you explain one Python script you wrote?
-35. Instead of hardcoding server names, they're stored in a **text file**. How do you import/read that file in Python?
-36. Will you write a **function** for that?
-37. How will you **call/execute** that function in Python?
-
+---
 
 ## Answers
 
 
----
+
 
 # 1. Difference between Declarative and Scripted Jenkins Pipelines. Which Jenkins Pipeline are you currently using?
 
@@ -104,7 +65,7 @@
 ### Key Difference
 
 | Declarative                   | Scripted                       |
-| ----------------------------- | ------------------------------ |
+| -- |  |
 | Structured syntax             | Groovy scripting               |
 | Easy to maintain              | More flexible                  |
 | Less coding                   | More coding                    |
@@ -114,7 +75,7 @@
 
 > "In our Jenkins pipeline, we automated **Build → Code Quality Scan → Security Scans → Docker Build → Image Push → Kubernetes Deployment** using a Declarative Pipeline."
 
----
+
 
 # 2. How are you handling zero downtime deployments in Kubernetes?
 
@@ -146,7 +107,7 @@ Result:
 * No downtime.
 * Stable deployments.
 
----
+
 
 # 3. Can you explain Rolling Updates?
 
@@ -172,7 +133,7 @@ Result:
 
 > "We use Rolling Updates for all application deployments through Jenkins and Helm."
 
----
+
 
 # 4. Can you explain Readiness Probe?
 
@@ -190,7 +151,7 @@ Result:
 
 > "Our application required around 30 seconds to initialize database connections. We increased the readiness probe delay so Kubernetes started routing traffic only after the application was fully ready."
 
----
+
 
 # 5. Can you explain Liveness Probe?
 
@@ -208,7 +169,7 @@ Result:
 
 > "If a Java application becomes unresponsive due to memory issues or deadlocks, Kubernetes detects the failed liveness probe and restarts the container automatically."
 
----
+
 
 # 6. Have you solved any production problem related to Rolling Updates or Probes?
 
@@ -239,7 +200,7 @@ The application startup time was longer than the configured readiness probe dela
 * Application became stable.
 * No downtime during future deployments.
 
----
+
 
 # 7. What is your approach towards Resource Requests and Resource Limits?
 
@@ -263,7 +224,7 @@ The application startup time was longer than the configured readiness probe dela
 * Monitor actual usage using **Prometheus** and **Grafana**.
 * Fine-tune values based on production metrics.
 
----
+
 
 # 8. What is your approach towards Horizontal Pod Autoscaler (HPA)?
 
@@ -282,7 +243,7 @@ The application startup time was longer than the configured readiness probe dela
 
 > "During high transaction periods, HPA automatically increased the number of application Pods, ensuring consistent performance without manual intervention."
 
----
+
 
 # 9. What is your approach towards Vertical Pod Autoscaler (VPA)?
 
@@ -299,7 +260,7 @@ The application startup time was longer than the configured readiness probe dela
 * VPA may restart Pods while modifying resource allocations.
 * Since our applications were stateless, **HPA** provided sufficient scaling with minimal impact.
 
----
+
 
 # 10. When do you use HPA and when do you use VPA?
 
@@ -339,7 +300,7 @@ Example:
 
 Continuing from **Question 11**.
 
----
+
 
 # 11. What exactly is Configuration Drift?
 
@@ -363,7 +324,7 @@ Continuing from **Question 11**.
 
 > "To avoid configuration drift, we managed infrastructure changes through Terraform only and restricted manual changes using IAM permissions."
 
----
+
 
 # 12. How did Terraform help you in fixing Configuration Drift?
 
@@ -383,7 +344,7 @@ Continuing from **Question 11**.
 
 > "On one occasion, a Security Group rule was modified manually in AWS. During the next deployment, `terraform plan` detected the difference. After validating the change, we executed `terraform apply`, which restored the infrastructure to the desired state."
 
----
+
 
 # 13. Do you have experience writing Terraform Modules?
 
@@ -405,7 +366,7 @@ Continuing from **Question 11**.
 * Consistency
 * Reduced code duplication
 
----
+
 
 # 14. If you want to create an AWS VPC using Terraform, what are the key things you will mention in that module?
 
@@ -445,7 +406,7 @@ Continuing from **Question 11**.
 
 > "Instead of hardcoding values, we passed variables through `terraform.tfvars` so the same module could be reused for Dev, QA, and Production."
 
----
+
 
 # 15. What exactly is Ingress?
 
@@ -470,7 +431,7 @@ Suppose we have:
 
 The Ingress Controller routes each request to the appropriate Kubernetes Service based on the hostname.
 
----
+
 
 # 16. What exactly is a Load Balancer?
 
@@ -490,7 +451,7 @@ The Ingress Controller routes each request to the appropriate Kubernetes Service
 
 > "In AWS, we used an **Application Load Balancer (ALB)** to receive internet traffic and forward it to the Kubernetes Ingress Controller."
 
----
+
 
 # 17. What is the difference between Ingress and Load Balancer?
 
@@ -530,7 +491,7 @@ Pods
 
 > "We exposed our applications using an AWS Application Load Balancer, while the NGINX Ingress Controller routed requests to the appropriate microservices."
 
----
+
 
 # 18. You mentioned Trivy, Snyk, and GitLeaks. What exactly do they detect?
 
@@ -548,7 +509,7 @@ Detects:
 * Kubernetes misconfigurations
 * Secrets (when enabled)
 
----
+
 
 ### Snyk
 
@@ -558,7 +519,7 @@ Detects:
 * Container image vulnerabilities
 * License compliance issues
 
----
+
 
 ### GitLeaks
 
@@ -575,7 +536,7 @@ Detects:
 
 > "These scans were integrated into our Jenkins pipeline. If critical vulnerabilities or exposed secrets were detected, the pipeline failed, and developers were required to remediate the issues before deployment."
 
----
+
 
 # 19. What is your approach towards Cloud Cost Optimization?
 
@@ -597,7 +558,7 @@ Detects:
 
 > "We analyzed resource utilization using Prometheus and Grafana, reduced over-provisioned CPU and Memory requests for several microservices, and enabled HPA. This improved resource utilization and reduced infrastructure costs."
 
----
+
 
 # 20. You know about the ELK Stack, right?
 
@@ -623,7 +584,7 @@ Detects:
 > "When users reported application failures, we searched logs in Kibana using request IDs and timestamps, identified the root cause from the application logs, and worked with the development team to resolve the issue."
 
 
----
+
 
 # 21. How are you handling log retention at a large scale?
 
@@ -642,7 +603,7 @@ Detects:
 
 > "In production, application logs were generated continuously. We configured retention policies so older indices were automatically deleted after the defined retention period, helping us optimize storage without affecting troubleshooting."
 
----
+
 
 # 22. How do you manage huge log volumes?
 
@@ -663,7 +624,7 @@ Detects:
 
 > "We observed rapid Elasticsearch storage growth due to verbose application logs. After reviewing the logging configuration, we disabled unnecessary DEBUG logs and optimized the retention policy, significantly reducing storage usage."
 
----
+
 
 # 23. What is Kafka?
 
@@ -690,7 +651,7 @@ Detects:
 
 > **I have knowledge of Kafka architecture and use cases, but I have not been directly responsible for configuring or administering Kafka clusters in production.**
 
----
+
 
 # 24. What is RabbitMQ?
 
@@ -716,7 +677,7 @@ Detects:
 
 > **I understand RabbitMQ concepts and architecture, but I have not worked directly on RabbitMQ administration in my project.**
 
----
+
 
 # 25. What is the difference between Kafka and RabbitMQ?
 
@@ -725,7 +686,7 @@ Detects:
 > **Both are messaging solutions, but they are designed for different use cases.**
 
 | Kafka                                        | RabbitMQ                               |
-| -------------------------------------------- | -------------------------------------- |
+| -- | -- |
 | Event streaming platform                     | Message broker                         |
 | High throughput                              | Reliable task processing               |
 | Stores messages for retention                | Removes messages after acknowledgement |
@@ -736,7 +697,7 @@ Detects:
 
 > **Kafka is best suited for event streaming and large-scale distributed systems, whereas RabbitMQ is commonly used for reliable task processing and traditional message queuing.**
 
----
+
 
 # 26. How good are you in Linux troubleshooting?
 
@@ -764,7 +725,7 @@ Detects:
 * `curl`
 * `ss -tuln`
 
----
+
 
 # 27. Suppose an application is not accessible via the browser and only a few users are affected. How will you investigate it?
 
@@ -783,7 +744,7 @@ Verify the issue.
 curl -I https://application-url
 ```
 
----
+
 
 ### Step 2
 
@@ -793,7 +754,7 @@ Check DNS resolution.
 nslookup application-url
 ```
 
----
+
 
 ### Step 3
 
@@ -803,7 +764,7 @@ Verify network connectivity.
 ping <server-ip>
 ```
 
----
+
 
 ### Step 4
 
@@ -813,7 +774,7 @@ Verify application process.
 ps -ef | grep application
 ```
 
----
+
 
 ### Step 5
 
@@ -829,7 +790,7 @@ or
 tail -100 application.log
 ```
 
----
+
 
 ### Step 6
 
@@ -841,7 +802,7 @@ free -h
 df -h
 ```
 
----
+
 
 ### Step 7
 
@@ -855,7 +816,7 @@ ss -tuln
 
 > **If only a few users are affected, I first suspect DNS, Load Balancer, routing, or client network issues before assuming an application failure.**
 
----
+
 
 # 28. Which Linux commands will you use for troubleshooting?
 
@@ -869,7 +830,7 @@ top
 htop
 ```
 
----
+
 
 ### Memory
 
@@ -878,7 +839,7 @@ free -h
 vmstat
 ```
 
----
+
 
 ### Disk
 
@@ -887,7 +848,7 @@ df -h
 du -sh
 ```
 
----
+
 
 ### Logs
 
@@ -897,7 +858,7 @@ tail -f
 less
 ```
 
----
+
 
 ### Network
 
@@ -911,7 +872,7 @@ dig
 traceroute
 ```
 
----
+
 
 ### Services
 
@@ -920,7 +881,7 @@ systemctl status
 systemctl restart
 ```
 
----
+
 
 ### Kubernetes
 
@@ -930,7 +891,7 @@ kubectl describe pod
 kubectl get events
 ```
 
----
+
 
 # 29. Can you explain one Linux troubleshooting task you handled?
 
@@ -961,7 +922,7 @@ The application startup took longer than expected, but Kubernetes started routin
 * 503 errors were eliminated.
 * Future deployments were completed without downtime.
 
----
+
 
 # 30. Were you involved in finding the root cause of production issues? What production issue did you handle recently?
 
@@ -1003,7 +964,7 @@ The application startup took longer than expected, but Kubernetes started routin
 
 Continuing from **Question 31**.
 
----
+
 
 # 31. Which programming language are you good at?
 
@@ -1033,7 +994,7 @@ Continuing from **Question 31**.
 
 > **My day-to-day scripting is mostly Python for automation and Shell scripting for Linux operational activities.**
 
----
+
 
 # 32. You said you're good at Python. Can you explain one Python script you wrote?
 
@@ -1069,7 +1030,7 @@ Log Result
 
 > "This reduced manual effort and ensured consistent execution across all target servers."
 
----
+
 
 # 33. Instead of hardcoding server names, they're stored in a text file. How do you read that file in Python?
 
@@ -1098,7 +1059,7 @@ for server in servers:
 
 > **Keeping server names in a file makes the script reusable and easier to maintain. If servers change, we only update the file instead of modifying the code.**
 
----
+
 
 # 34. Will you write a function for that?
 
@@ -1125,7 +1086,7 @@ def read_servers(filename):
 
 > **Functions help us follow modular coding practices and avoid duplicate code.**
 
----
+
 
 # 35. How will you call/execute that function in Python?
 
@@ -1154,139 +1115,3 @@ read_servers("servers.txt")
 ### Interview Statement
 
 > **The function executes when it is called. It returns the required data, which can then be processed by the main program.**
-
----
-
-# 36. Were you involved in finding the root cause of production issues?
-
-## Answer
-
-> **Yes. One of my key responsibilities was supporting production deployments, monitoring applications, troubleshooting issues, identifying root causes, and coordinating with development teams whenever required.**
-
-### My Approach
-
-1. Understand the issue.
-2. Verify impact.
-3. Check logs and monitoring dashboards.
-4. Analyze application behavior.
-5. Identify root cause.
-6. Implement fix.
-7. Validate resolution.
-8. Document findings.
-
-### Tools Used
-
-* Kubernetes
-* Jenkins
-* ELK
-* Prometheus
-* Grafana
-* Linux logs
-
-### Interview Statement
-
-> **While development teams handled code fixes, I was actively involved in infrastructure, deployment, monitoring, and root cause analysis activities.**
-
----
-
-# 37. What production issue did you handle recently?
-
-## Answer
-
-This is probably the **strongest answer from the entire interview**, so keep it polished.
-
-### Situation
-
-> **Recently, users started experiencing intermittent HTTP 503 errors immediately after a Kubernetes deployment.**
-
----
-
-### Investigation
-
-I performed the following checks:
-
-* Verified Pod status.
-
-```bash id="xhv6nd"
-kubectl get pods
-```
-
-* Checked Pod logs.
-
-```bash id="2dk5fc"
-kubectl logs <pod-name>
-```
-
-* Reviewed deployment events.
-
-```bash id="v2o8on"
-kubectl describe pod <pod-name>
-```
-
-* Verified readiness probe configuration.
-
----
-
-### Root Cause
-
-> **The application startup time was longer than expected because it needed to establish database connections and load application configurations. However, Kubernetes started routing traffic before the application became fully ready.**
-
----
-
-### Resolution
-
-* Increased readiness probe delay.
-
-```yaml id="4l0y8r"
-initialDelaySeconds: 30
-```
-
-* Tuned probe thresholds.
-* Redeployed through Helm.
-* Monitored rollout.
-
-```bash id="jspl4u"
-kubectl rollout status deployment/app
-```
-
----
-
-### Result
-
-* HTTP 503 errors were resolved.
-* No downtime observed.
-* Improved deployment stability.
-* Applied the same readiness standards to similar services.
-
-### Interview Closing Statement
-
-> **The key lesson from this incident was that a healthy container is not always a ready application. Proper readiness probe configuration is critical for successful zero-downtime deployments.**
-
----
-
-# Quick Revision of Questions 31–37
-
-### Python
-
-* Python and Shell are primary scripting languages.
-* Python used for automation.
-* Use `open()` to read files.
-* Use functions for reusability.
-* Functions execute when called.
-
-### Production Support
-
-* Follow a structured troubleshooting approach.
-* Analyze logs first.
-* Verify infrastructure and application health.
-* Identify root cause before applying fixes.
-
-### Production Issue
-
-* HTTP 503 after deployment.
-* Readiness probe misconfiguration.
-* Increased startup delay.
-* Redeployed successfully.
-* Zero downtime achieved.
-
-These answers now cover **all 37 questions** from the Xoriant interview in a polished, future-reference format aligned with your actual DevOps/DevSecOps experience.
