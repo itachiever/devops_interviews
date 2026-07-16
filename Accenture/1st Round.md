@@ -99,7 +99,7 @@
 30. Which organization are you currently working with?
 
 
-31. You worked with TCS also, right?
+31. You worked with PREVIOUS COMPANY NAME also, right?
 
 
 32. Are you currently in Bangalore or Mumbai?
