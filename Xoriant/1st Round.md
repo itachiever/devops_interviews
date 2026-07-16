@@ -1,6 +1,42 @@
 ## Questions: 1st Round
 
+1. Difference between **Declarative** and **Scripted Jenkins Pipelines**? Which Jenkins Pipeline are you currently using?
+2. How are you handling **zero downtime deployments** in Kubernetes?
+3. Can you explain **Rolling Updates**?
+4. Can you explain **Readiness Probe**?
+5. Can you explain **Liveness Probe**?
+6. Have you solved any production problem related to rolling updates or probes?
+7. What is your approach towards **Resource Requests** and **Resource Limits**?
+8. What is your approach towards **Horizontal Pod Autoscaler (HPA)**?
+9. What is your approach towards **Vertical Pod Autoscaler (VPA)**?
+10. When do you use **HPA** and when do you use **VPA**?
+11. What exactly is **Configuration Drift**?
+12. How did **Terraform** help you in fixing Configuration Drift?
+13. Do you have experience writing **Terraform Modules**?
+14. If you want to create an **AWS VPC using Terraform**, what are the key things you will mention in that module?
+15. What exactly is **Ingress**?
+16. What exactly is a **Load Balancer**?
+17. What is the difference between **Ingress** and **Load Balancer**?
+18. You mentioned **Trivy**, **Snyk**, and **GitLeaks**. What exactly do they detect?
+19. What is your approach towards **Cloud Cost Optimization**?
+20. You know about the **ELK Stack**, right?
+21. How are you handling **log retention** at a large scale?
+22. How do you handle **large log volumes**?
+23. What is **Kafka**?
+24. What is **RabbitMQ**?
+25. What is the difference between **Kafka** and **RabbitMQ**?
+26. How good are you in **Linux troubleshooting**?
+27. Suppose an application is not accessible via the browser and only a few users are affected. How will you investigate it?
+28. Which **Linux commands** will you use for troubleshooting?
+29. Can you explain one **Linux troubleshooting task** you handled?
+30. Were you involved in finding the **root cause** of production issues? What **production issue** did you handle recently?
+31. Which **programming language** are you good at?
+32. You said you're good at **Python**. Can you explain one Python script you wrote?
+33. Instead of hardcoding server names, they're stored in a **text file**. How do you import/read that file in Python?
+34. Will you write a **function** for that?
+35. How will you **call/execute** that function in Python?
 
+    
 
 1. Difference between **Declarative** and **Scripted Jenkins Pipelines**.
 2. Which Jenkins Pipeline are you currently using?
