@@ -66,7 +66,7 @@
 >
 > I started my career at **TCS**, where I worked primarily on **Jenkins, CI/CD pipeline management, and application deployments**. After around 2.5 years, I transitioned into a **DevSecOps Engineer** role.
 >
-> Currently, I work with **Talakunchi Networks**, deployed to **InSolutions Global (ISG)**, a fintech company providing payment gateway solutions for banking clients.
+> Currently, I work with **COMPANAY NAME**, deployed to **CLIENT NAME**, a fintech company providing payment gateway solutions for banking clients.
 >
 > My primary responsibilities include:
 >
