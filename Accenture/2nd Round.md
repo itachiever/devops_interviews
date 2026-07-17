@@ -79,17 +79,6 @@
 
 # Answers:
 
-
-Below are polished interview answers for all **26 questions**. They are aligned with:
-
-* Your **4+ years DevSecOps profile**
-* Your **ISG fintech project**
-* Your **actual experience**
-* The **Accenture role**
-* What an experienced DevSecOps engineer should answer in an interview.
-
-
-
 # 1. Can you introduce yourself?
 
 **Answer:**
