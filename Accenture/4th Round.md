@@ -77,8 +77,6 @@
 
 ### 18. Do you have any questions for us?
 
----
-
 # Core Technical Areas They Evaluated
 
 * DevSecOps Platform Engineering
