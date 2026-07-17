@@ -148,7 +148,7 @@ I have **4.3 years of total IT experience**.
 
 **Answer:**
 
-My recent project was for **InSolutions Global**, a fintech company providing payment gateway solutions to banking clients.
+My recent project was for **CLIENT NAME**, a fintech company providing payment gateway solutions to banking clients.
 
 The objective was to build and maintain secure applications while ensuring compliance with **PCI-DSS**, RBI and SEBI regulations.
 
