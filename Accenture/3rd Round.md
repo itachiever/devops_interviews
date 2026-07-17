@@ -186,7 +186,7 @@ Several questions included follow-ups, but I've consolidated them into their mai
 
 ### Answer:
 
-Hi, I'm **NAME**, a **DevSecOps Engineer with around 4 years of experience** in DevOps and DevSecOps.
+Hi, I'm **YOUR NAME**, a **DevSecOps Engineer with around 4 years of experience** in DevOps and DevSecOps.
 
 I started my career at **PREVIOUS COMPANY NAME** as a DevOps Engineer, where I worked on CI/CD automation, infrastructure provisioning, and deployment activities. Later, I transitioned into **DevSecOps**, focusing on integrating security into the Software Development Lifecycle.
 
