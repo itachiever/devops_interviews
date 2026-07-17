@@ -1,7 +1,5 @@
-# Interview Questions: 4th Round (Client 2nd Round)
+# Interview Questions: 4th Round (Client(Deutsche Börse) 2nd Round)
 
-
-# Deutsche Börse – Client Round 2 Interview Questions
 
 ### 1. Introduce yourself and explain your DevSecOps experience.
 
