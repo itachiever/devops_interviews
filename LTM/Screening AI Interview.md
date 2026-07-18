@@ -1,4 +1,4 @@
-# Questions
+# Interview Questions : AI Screening Round
 1. Can you please introduce yourself and share a bit about your professional background?
 
 2. Could you describe what motivated you to pursue a career in DevSecOps and what you find most rewarding about working in this domain?
@@ -30,6 +30,8 @@
 15. Write a program that reads a single non-negative integer and outputs its binary representation as a string without any prefix and without leading zeros (except for zero itself).
 
 16. Using a subquery, list the employees who have the highest salary in their department.
+
+---
 
 # Answers
 
