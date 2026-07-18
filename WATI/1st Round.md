@@ -1,4 +1,4 @@
-### Complete Interview Questions List
+## Interview Questions:
 
 1. **Let's start with a quick introduction. Are you working? State your expertise, current location, and job profile.**
 
@@ -57,9 +57,9 @@
 13. Secret Management without third-party tools.
 
 
+---
 
-
-# Answers
+# Interview Answers
 
 
 # 1. Tell me about yourself.
