@@ -8,7 +8,7 @@
 
 
 
-### 3. Which cloud platform are you more confident in—AWS or Azure?
+### 3. Which cloud platform are you more confident in-AWS or Azure?
 
 
 
