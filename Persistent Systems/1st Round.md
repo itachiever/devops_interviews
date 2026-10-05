@@ -64,7 +64,6 @@
 
 # Answers:
 
-
 ## 1. Introduce yourself, your experience, technologies, domains, daily activities, recent challenges, and achievements.
 
 **Answer:**
