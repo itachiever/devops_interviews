@@ -1,4 +1,4 @@
-## Questions: AI Round | Client specific interview | DevSecOps_Kafka | Zeko Ai
+## Questions: AI Round | Client specific interview | DevSecOps_Kafka | Zeko Ai Interview platform 
 
 1. Can you introduce yourself and explain your professional background?
 2. What key factors would you consider when designing a Kafka cluster to ensure high availability and zero data loss?
