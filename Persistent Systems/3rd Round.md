@@ -72,3 +72,7 @@
 69. Why do we need to maintain an SBOM?
 70. Who manages SBOM generation and SBOM scanning in your project?
 71. How do you generate an SBOM? Can you explain the process?
+
+# Answers
+
+
