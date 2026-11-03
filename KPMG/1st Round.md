@@ -1,8 +1,0 @@
-## Interview Questions 
-
-
----
-
-
-## Answers
-
