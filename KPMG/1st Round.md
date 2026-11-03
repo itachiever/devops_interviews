@@ -74,5 +74,6 @@ These were not technical assessment questions, but were also asked:
 2. What is your current notice period and expected last working date?
 3. Do you currently have any other offer in hand?
 
-
+----
 # Answers: 1st Round
+
