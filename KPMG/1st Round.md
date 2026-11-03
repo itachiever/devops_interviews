@@ -77,15 +77,11 @@ These were not technical assessment questions, but were also asked:
 ----
 # Answers: 1st Round
 
-## Question 1
-
-Question:
-
-Introduce yourself and explain your current roles and responsibilities.
+## Question 1: Introduce yourself and explain your current roles and responsibilities.
 
 Answer:
 
-Good morning. I’m a DevSecOps Engineer with around 4.5 years of experience in DevOps, CI/CD automation, cloud infrastructure, and application security.
+I’m a DevSecOps Engineer with around 4.5 years of experience in DevOps, CI/CD automation, cloud infrastructure, and application security.
 
 Currently, I’m working with CURRENT COMPANY, deployed to In-Solutions Global, a fintech and payment gateway organization supporting banking clients.
 
@@ -99,11 +95,7 @@ Previously, I worked at TCS on an e-governance project, where I gained experienc
 
 My strongest areas are DevSecOps, CI/CD security integration, vulnerability management, and automation, and I’m looking to expand further into cloud and platform security engineering.
 
-## Question 2
-
-Question:
-
-How many years of overall experience do you have, and how many years of experience do you have with Azure?
+## Question 2: How many years of overall experience do you have, and how many years of experience do you have with Azure?
 
 Answer:
 
