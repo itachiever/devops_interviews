@@ -1,11 +1,5 @@
 ## Interview Questions: 1st Round
 
-# KPMG – First Round Interview Questions
-
-I have extracted the questions asked by both panel members, merged repeated questions and follow-ups into single questions, and arranged them topic-wise.
-
-Total: 25 consolidated interview questions.
-
 ## 1. Introduction and experience
 
 1\. Can you introduce yourself and explain your current roles and responsibilities?
