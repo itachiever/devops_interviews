@@ -51,17 +51,13 @@ These were statements or explanations rather than direct interview questions:
 
 # Answers: 2nd Round
 
-## Question 1
-
-Question:
-
-Can you introduce yourself and share anything about your academics, achievements, or experience that would be relevant to this conversation?
+### Question 1: Can you introduce yourself and share anything about your academics, achievements, or experience that would be relevant to this conversation?
 
 Answer:
 
 Good evening, and thank you for the opportunity.
 
-I'm a DevSecOps Engineer with around 4.5 years of overall IT experience. I started my career at PREVIOUS COMPANY, where I worked for approximately 2.5 years as a DevOps Engineer. Later, I transitioned into DevSecOps, and currently I'm working with CURRENT COMPANY, supporting In-Solutions Global, a fintech and payment gateway service provider.
+I'm a DevSecOps Engineer with around 4.5 years of overall IT experience. I started my career at PREVIOUS COMPANY, where I worked for approximately 2.5 years as a DevOps Engineer. Later, I transitioned into DevSecOps, and currently I'm working with CURRENT COMPANY, supporting CLIENT, a fintech and payment gateway service provider.
 
 ISG provides B2B payment solutions to banking clients, so application security and regulatory compliance are important aspects of our environment.
 
@@ -82,11 +78,7 @@ Regarding achievements, I recently received an Employee of the Quarter award for
 
 Overall, my experience is primarily around DevSecOps, application security, CI/CD security integration, vulnerability management, and automation.
 
-## Question 2
-
-Question:
-
-Why are you looking for a job change?
+### Question 2: Why are you looking for a job change?
 
 Answer:
 
@@ -98,11 +90,7 @@ Second, from a career perspective, I've been working in my current project for a
 
 So, I'm looking for a role that offers both a suitable location and an opportunity to grow technically.
 
-## Question 3
-
-Question:
-
-Do you currently have any other offers that you are pursuing?
+### Question 3: Do you currently have any other offers that you are pursuing?
 
 Answer:
 
@@ -112,11 +100,7 @@ One is from Infosys, and the other is from Persistent Systems.
 
 Both opportunities are relevant to my DevOps and DevSecOps background, but I'm still evaluating the role responsibilities, technical alignment, compensation, and long-term career opportunities before making a final decision.
 
-## Question 4
-
-Question:
-
-Why are you still looking for a change when you already have two offers? What are those offers missing that you are looking for in this role?
+### Question 4: Why are you still looking for a change when you already have two offers? What are those offers missing that you are looking for in this role?
 
 Answer:
 
@@ -134,11 +118,7 @@ The Platform Security Consultant position aligns closely with my current DevSecO
 
 So, I'm not evaluating opportunities based only on compensation. I'm also looking for the right responsibilities, technical growth, and long-term career direction.
 
-## Question 5
-
-Question:
-
-What is your current notice period, and when is your last working day?
+### Question 5: What is your current notice period, and when is your last working day?
 
 Answer:
 
@@ -146,11 +126,7 @@ At the time of that discussion, I had already resigned from my current organizat
 
 I was serving my notice period, and that was the LWD communicated during the interview.
 
-## Question 6
-
-Question:
-
-Are you pursuing any certifications? I see that you have completed some certifications in Azure and GCP.
+### Question 6: Are you pursuing any certifications? I see that you have completed some certifications in Azure and GCP.
 
 Answer:
 
@@ -164,11 +140,7 @@ My learning areas include DevOps, DevSecOps, cloud security, infrastructure as c
 
 My goal is to combine certification knowledge with practical implementation experience.
 
-## Question 7
-
-Question:
-
-You already have two offers. What is it about this KPMG role that interests you and makes you consider joining us?
+### Question 7: You already have two offers. What is it about this KPMG role that interests you and makes you consider joining us?
 
 Answer:
 
@@ -186,11 +158,7 @@ I'm particularly interested in growing from application-level DevSecOps security
 
 That's why I see KPMG as a strong opportunity for my long-term career growth.
 
-## Question 8
-
-Question:
-
-You understand that this role has a hybrid work setup, with employees expected to come to the office twice a week. Are you comfortable with that arrangement?
+### Question 8: You understand that this role has a hybrid work setup, with employees expected to come to the office twice a week. Are you comfortable with that arrangement?
 
 Answer:
 
