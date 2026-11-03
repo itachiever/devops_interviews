@@ -77,7 +77,7 @@ These were not technical assessment questions, but were also asked:
 ----
 # Answers: 1st Round
 
-## Question 1: Introduce yourself and explain your current roles and responsibilities.
+### Question 1: Introduce yourself and explain your current roles and responsibilities.
 
 Answer:
 
@@ -95,7 +95,7 @@ Previously, I worked at TCS on an e-governance project, where I gained experienc
 
 My strongest areas are DevSecOps, CI/CD security integration, vulnerability management, and automation, and I’m looking to expand further into cloud and platform security engineering.
 
-## Question 2: How many years of overall experience do you have, and how many years of experience do you have with Azure?
+### Question 2: How many years of overall experience do you have, and how many years of experience do you have with Azure?
 
 Answer:
 
@@ -105,11 +105,7 @@ My experience is mainly across AWS and hybrid cloud environments, with exposure 
 
 My strongest hands-on cloud experience is with AWS, while I have practical exposure to Azure services and cloud-security concepts. I’m comfortable working in multi-cloud environments and adapting to the specific services and processes used by the organization.
 
-## Question 3
-
-Question:
-
-Have you worked on Terraform, or is infrastructure provisioning handled by a separate team?
+### Question 3: Have you worked on Terraform, or is infrastructure provisioning handled by a separate team?
 
 Answer:
 
@@ -123,11 +119,7 @@ My involvement included understanding Terraform configurations, reviewing resour
 
 My primary focus has been DevOps and DevSecOps, but I understand how Terraform fits into infrastructure automation and how infrastructure changes are managed through Git-based workflows and CI/CD pipelines.
 
-## Question 4
-
-Question:
-
-Which Terraform modules have you created or worked on?
+### Question 4: Which Terraform modules have you created or worked on?
 
 Answer:
 
@@ -147,11 +139,7 @@ We can define inputs through variables, expose required values through outputs, 
 
 My experience is mainly with working on and understanding these module-based configurations rather than independently owning a large Terraform module framework in production.
 
-## Question 5
-
-Question:
-
-How do you ensure that VPC/VNet, subnet, and VM resources are created in the correct dependency order when provisioning everything in a single Terraform apply?
+### Question 5: How do you ensure that VPC/VNet, subnet, and VM resources are created in the correct dependency order when provisioning everything in a single Terraform apply?
 
 Answer:
 
@@ -172,11 +160,7 @@ Before applying the configuration, I use `terraform plan` to review the executio
 
 This helps ensure resources are provisioned in the correct order and reduces deployment failures caused by missing dependencies.
 
-## Question 6
-
-Question:
-
-Have you developed CI/CD pipelines for infrastructure or application development? Which tools have you used?
+### Question 6: Have you developed CI/CD pipelines for infrastructure or application development? Which tools have you used?
 
 Answer:
 
@@ -200,11 +184,7 @@ I have also worked with Docker, Kubernetes, AWS, and Ansible as part of the broa
 
 My primary hands-on responsibility has been CI/CD security integration and pipeline support, while infrastructure provisioning and some deployment activities are coordinated with the respective teams.
 
-## Question 7
-
-Question:
-
-Can you explain the infrastructure development pipeline end-to-end, including the type of application and the security steps involved?
+### Question 7: Can you explain the infrastructure development pipeline end-to-end, including the type of application and the security steps involved?
 
 Answer:
 
@@ -233,11 +213,7 @@ From the infrastructure perspective, Terraform can be used to provision the requ
 
 My primary responsibility in this workflow is the security integration, scan execution, quality gates, vulnerability management, and coordination with development teams.
 
-## Question 8
-
-Question:
-
-What is a quality gate, and what criteria do you consider when configuring it?
+### Question 8: What is a quality gate, and what criteria do you consider when configuring it?
 
 Answer:
 
@@ -260,11 +236,7 @@ The development team then investigates and remediates the finding. After the fix
 
 In production environments, quality gates should be risk-based and aligned with security policies. We should also have a documented exception process for approved business cases, rather than bypassing security controls without review.
 
-## Question 9
-
-Question:
-
-Have you worked with AKS or EKS? Can you explain the application deployment architecture?
+### Question 9: Have you worked with AKS or EKS? Can you explain the application deployment architecture?
 
 Answer:
 
@@ -291,11 +263,7 @@ From a security perspective, we need to consider RBAC, namespace isolation, netw
 
 In my current project, I support the security and CI/CD aspects of these application workflows, including container image scanning and security checks. I work with the relevant teams for deployment and infrastructure activities.
 
-## Question 10
-
-Question:
-
-What scanning stages do you include in a CI/CD pipeline after source-code checkout and build?
+### Question 10: What scanning stages do you include in a CI/CD pipeline after source-code checkout and build?
 
 Answer:
 
@@ -317,11 +285,7 @@ If a critical issue or a policy violation is identified, the pipeline can block 
 
 The exact scanning stages depend on the application, technology stack, and security requirements.
 
-## Question 11
-
-Question:
-
-How do you configure and execute Fortify SAST in a CI/CD pipeline? Explain the CLI or plugin integration, YAML configuration, prerequisites, and how scan results are generated and reviewed.
+### Question 11: How do you configure and execute Fortify SAST in a CI/CD pipeline? Explain the CLI or plugin integration, YAML configuration, prerequisites, and how scan results are generated and reviewed.
 
 Answer:
 
@@ -366,11 +330,7 @@ We also need to manage false positives and approved vulnerability suppressions c
 In my current role, I work with Fortify integration and scan operations as part of the DevSecOps pipeline, including coordination around scan results, vulnerability triage, and remediation with development teams.
 
 
-## Question 12
-
-Question:
-
-Have you worked with Azure Policies and Initiatives? Have you created custom policies or initiatives and assigned them at the Management Group or Subscription level?
+### Question 12: Have you worked with Azure Policies and Initiatives? Have you created custom policies or initiatives and assigned them at the Management Group or Subscription level?
 
 Answer:
 
@@ -393,11 +353,7 @@ In an enterprise environment, centrally managed policies are commonly assigned a
 
 My hands-on experience is stronger in DevSecOps security integration, access management, and security governance. I understand Azure Policy concepts and their role in enforcing cloud security standards, but I have not independently owned a large-scale custom policy framework.
 
-## Question 13
-
-Question:
-
-Have you independently created and deployed a custom Azure Policy?
+### Question 13: Have you independently created and deployed a custom Azure Policy?
 
 Answer:
 
@@ -421,11 +377,7 @@ The general implementation process is:
 
 For existing resources, remediation may be required. Depending on the policy effect, Azure Policy can also support remediation through effects such as DeployIfNotExists and Modify.
 
-## Question 14
-
-Question:
-
-Have you worked on remediating non-compliant Azure resources?
+### Question 14: Have you worked on remediating non-compliant Azure resources?
 
 Answer:
 
@@ -447,11 +399,7 @@ I would also document the remediation and ensure that similar configurations are
 
 My experience is primarily around security findings, access governance, and vulnerability remediation coordination, rather than independently managing Azure Policy remediation across an entire enterprise environment.
 
-## Question 15
-
-Question:
-
-Have you executed an Azure remediation task? Can you explain the scenario and the steps involved?
+### Question 15: Have you executed an Azure remediation task? Can you explain the scenario and the steps involved?
 
 Answer:
 
@@ -475,11 +423,7 @@ For policies using the Modify effect, remediation can similarly apply supported 
 
 One important consideration is that remediation tasks do not automatically fix every type of policy violation. The policy must support remediation, and the required permissions and configuration must be in place.
 
-## Question 16
-
-Question:
-
-Have you worked with firewalls? What is your experience, and who manages the firewall in your project?
+### Question 16: Have you worked with firewalls? What is your experience, and who manages the firewall in your project?
 
 Answer:
 
@@ -528,11 +472,7 @@ We can also use Just-in-Time VM access, where supported, to reduce continuous ex
 
 My experience is more aligned with DevSecOps security tools and vulnerability management, but I understand how Defender for Cloud complements those controls by providing visibility into cloud infrastructure security.
 
-## Question 18
-
-Question:
-
-How do you prevent secrets such as API keys, passwords, and access tokens from being pushed to GitHub or GitLab repositories?
+### Question 18: How do you prevent secrets such as API keys, passwords, and access tokens from being pushed to GitHub or GitLab repositories?
 
 Answer:
 
@@ -554,11 +494,7 @@ If a real secret is exposed, simply deleting it from the latest commit is not su
 
 In my current project, I work with secret-scanning integration and security checks as part of the DevSecOps pipeline.
 
-## Question 19
-
-Question:
-
-Have you configured tools such as GitLeaks, TruffleHog, or GitGuardian? At which stage do you integrate secret scanning into the CI/CD pipeline?
+### Question 19: Have you configured tools such as GitLeaks, TruffleHog, or GitGuardian? At which stage do you integrate secret scanning into the CI/CD pipeline?
 
 Answer:
 
@@ -592,11 +528,7 @@ The exact integration depends on the tool and CI/CD platform. For example, GitGu
 
 If a secret is detected, we should validate the finding, revoke or rotate the credential, investigate potential exposure, and ensure the replacement is stored in an approved secrets-management solution.
 
-## Question 20
-
-Question:
-
-How do you securely store account IDs, tenant IDs, credentials, and application configuration?
+### Question 20: How do you securely store account IDs, tenant IDs, credentials, and application configuration?
 
 Answer:
 
@@ -625,11 +557,7 @@ We should also follow these practices:
 
 For example, an application running in Azure can use a managed identity to retrieve a database password from Azure Key Vault without storing the credential directly in the application code.
 
-## Question 21
-
-Question:
-
-How do you integrate AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault with GitHub Actions or GitLab CI/CD?
+### Question 21: How do you integrate AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault with GitHub Actions or GitLab CI/CD?
 
 Answer:
 
@@ -657,11 +585,7 @@ For production environments, I would prefer short-lived credentials, least-privi
 
 The exact integration syntax depends on whether we are using GitHub Actions, GitLab CI, Jenkins, or Azure DevOps.
 
-## Question 22
-
-Question:
-
-Have you worked with Microsoft Sentinel and Qualys? What are their purposes, and what is your level of experience with them?
+### Question 22: Have you worked with Microsoft Sentinel and Qualys? What are their purposes, and what is your level of experience with them?
 
 Answer:
 
@@ -690,11 +614,7 @@ For example, a vulnerability scan can identify an outdated package or a known vu
 
 My experience is primarily with application security scanning and vulnerability remediation workflows, but I understand how Sentinel and Qualys complement DevSecOps by extending security visibility into infrastructure monitoring and enterprise security operations.
 
-## Question 23
-
-Question:
-
-If you deploy a virtual machine in an Azure VNet or AWS VPC, can you explain the ideal inbound traffic flow, including DNS, routing, network security, and firewalls?
+### Question 23: If you deploy a virtual machine in an Azure VNet or AWS VPC, can you explain the ideal inbound traffic flow, including DNS, routing, network security, and firewalls?
 
 Answer:
 
@@ -725,11 +645,7 @@ We should also enable TLS, logging, monitoring, and appropriate access controls.
 
 The main objective is to follow defense in depth, minimize public exposure, and allow only the required traffic between network layers.
 
-## Question 24
-
-Question:
-
-What are the different network layers or components used to control traffic, such as NSGs, Security Groups, Route Tables, UDRs, and Firewalls? Explain their differences.
+### Question 24: What are the different network layers or components used to control traffic, such as NSGs, Security Groups, Route Tables, UDRs, and Firewalls? Explain their differences.
 
 Answer:
 
@@ -780,11 +696,7 @@ The key difference is:
 
 In production, these controls work together. For example, an application subnet may have a route directing outbound traffic through a firewall, while an NSG or Security Group allows only the required application ports.
 
-## Question 25
-
-Question:
-
-If an Azure Storage Account is configured as private but someone from an external network can still access its Blob Storage, what could be the possible reasons, and how would you troubleshoot the issue?
+### Question 25: If an Azure Storage Account is configured as private but someone from an external network can still access its Blob Storage, what could be the possible reasons, and how would you troubleshoot the issue?
 
 Answer:
 
