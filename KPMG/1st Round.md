@@ -83,7 +83,7 @@ Answer:
 
 I’m a DevSecOps Engineer with around 4.5 years of experience in DevOps, CI/CD automation, cloud infrastructure, and application security.
 
-Currently, I’m working with CURRENT COMPANY, deployed to In-Solutions Global, a fintech and payment gateway organization supporting banking clients.
+Currently, I’m working with CURRENT COMPANY, deployed to CLIENT, a fintech and payment gateway organization supporting banking clients.
 
 My primary responsibility is integrating and managing security practices within CI/CD pipelines. I work with tools such as Fortify for SAST/DAST, Sonatype Lifecycle for SCA, Sonatype SBOM Manager, Trivy for container scanning, SonarQube, and secret-scanning tools.
 
@@ -91,7 +91,7 @@ We use GitLab for source-code management and Jenkins for pipeline orchestration.
 
 I’m also involved in security-platform administration, access management through RBAC and SSO, reporting, and automation using Python and Shell scripting.
 
-Previously, I worked at TCS on an e-governance project, where I gained experience with Jenkins, Docker, Kubernetes, AWS services, Terraform, Ansible, and monitoring tools such as Prometheus and Grafana.
+Previously, I worked at PREVIOUS COMPANY NAME on an e-governance project, where I gained experience with Jenkins, Docker, Kubernetes, AWS services, Terraform, Ansible, and monitoring tools such as Prometheus and Grafana.
 
 My strongest areas are DevSecOps, CI/CD security integration, vulnerability management, and automation, and I’m looking to expand further into cloud and platform security engineering.
 
@@ -111,7 +111,7 @@ Answer:
 
 I have worked with Terraform, mainly in infrastructure provisioning activities and supporting infrastructure automation.
 
-In my previous project at TCS, I had exposure to Terraform for provisioning AWS resources, including VPC-related infrastructure and virtual machines.
+In my previous project at PREVIOUS COMPANY, I had exposure to Terraform for provisioning AWS resources, including VPC-related infrastructure and virtual machines.
 
 However, infrastructure provisioning was not my only responsibility. Some of the more extensive infrastructure activities were handled in coordination with the dedicated cloud or infrastructure team.
 
