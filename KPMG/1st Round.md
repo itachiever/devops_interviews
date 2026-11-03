@@ -1,4 +1,4 @@
-## Interview Questions: 1st Round
+# Interview Questions: 1st Round
 
 ## 1. Introduction and experience
 
@@ -75,4 +75,4 @@ These were not technical assessment questions, but were also asked:
 3. Do you currently have any other offer in hand?
 
 
-## Answers: 1st Round
+# Answers: 1st Round
